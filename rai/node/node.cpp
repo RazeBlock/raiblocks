@@ -761,15 +761,15 @@ lmdb_max_dbs (128)
 			preconfigured_representatives.push_back (rai::account ("CB35ED23D47E1A16667EDE415CD4CD05961481D7D23A43958FAE81FC12FA49FF"));
 			break;
 		case rai::rai_networks::rai_live_network:
-			preconfigured_peers.push_back ("rai.raiblocks.net");
-			preconfigured_representatives.push_back (rai::account ("A30E0A32ED41C8607AA9212843392E853FCBCB4E7CB194E35C94F07F91DE59EF"));
-			preconfigured_representatives.push_back (rai::account ("67556D31DDFC2A440BF6147501449B4CB9572278D034EE686A6BEE29851681DF"));
-			preconfigured_representatives.push_back (rai::account ("5C2FBB148E006A8E8BA7A75DD86C9FE00C83F5FFDBFD76EAA09531071436B6AF"));
-			preconfigured_representatives.push_back (rai::account ("AE7AC63990DAAAF2A69BF11C913B928844BF5012355456F2F164166464024B29"));
-			preconfigured_representatives.push_back (rai::account ("BD6267D6ECD8038327D2BCC0850BDF8F56EC0414912207E81BCF90DFAC8A4AAA"));
-			preconfigured_representatives.push_back (rai::account ("2399A083C600AA0572F5E36247D978FCFC840405F8D4B6D33161C0066A55F431"));
-			preconfigured_representatives.push_back (rai::account ("2298FAB7C61058E77EA554CB93EDEEDA0692CBFCC540AB213B2836B29029E23A"));
-			preconfigured_representatives.push_back (rai::account ("3FE80B4BC842E82C1C18ABFEEC47EA989E63953BC82AC411F304D13833D52A56"));
+			preconfigured_peers.push_back ("peer.razeblock.com");
+			preconfigured_representatives.push_back (rai::account ("A79F9116B2DBFF6EFCF5C9AA54414DD0F3B9751D5764D5EFAB255C78CB6103E2"));
+			preconfigured_representatives.push_back (rai::account ("D1FD30E385727B74A88FD7DEBE166CEF3E8C4022EC2E83614B1B7F81D46D1EDF"));
+			preconfigured_representatives.push_back (rai::account ("4FAA2923A361D6C5EC7C24A169E36828A99DEA01C2C1706F84FA6A21CFE63204"));
+			preconfigured_representatives.push_back (rai::account ("198D9F4957508AC00A8D5EE730DF2D8951D190390FA359CF1E6C5E63364DBB9B"));
+			preconfigured_representatives.push_back (rai::account ("3CE02C13C42F75F7B90A04660A18109AFBFD6E84B0A7A5DEBED9E1455ED032F5"));
+			preconfigured_representatives.push_back (rai::account ("0148A669489E502CF047754318229784BF8E3E0E54F2E0E6976C9C961E0A81B0"));
+			preconfigured_representatives.push_back (rai::account ("D772B5D5AE499935E78DE971C843BAD466C914B0899F30DD94B072672E8A0639"));
+			preconfigured_representatives.push_back (rai::account ("5B620353D34F3E461A10B9FFA814AB35FBA7A30F3F04DBBB1A83CA9C092AEB0C"));
 			break;
 		default:
 			assert (false);
