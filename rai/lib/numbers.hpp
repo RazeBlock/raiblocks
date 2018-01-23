@@ -6,7 +6,7 @@
 
 namespace rai
 {
-// Random pool used by RaiBlocks.
+// Random pool used by RazeBlock.
 // This must be thread_local as long as the AutoSeededRandomPool implementation requires it
 extern thread_local CryptoPP::AutoSeededRandomPool random_pool;
 using uint128_t = boost::multiprecision::uint128_t;

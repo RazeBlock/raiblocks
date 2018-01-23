@@ -163,7 +163,7 @@ namespace
 {
 void show_error (std::string const & message_a)
 {
-	QMessageBox message (QMessageBox::Critical, "Error starting RaiBlocks", message_a.c_str ());
+	QMessageBox message (QMessageBox::Critical, "Error starting RazeBlock", message_a.c_str ());
 	message.setModal (true);
 	message.show ();
 	message.exec ();
