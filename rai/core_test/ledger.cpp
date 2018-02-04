@@ -42,8 +42,8 @@ TEST (ledger, genesis_balance)
 	rai::account_info info;
 	ASSERT_FALSE (store.account_get (transaction, rai::genesis_account, info));
 	// Frontier time should have been updated when genesis balance was added
-	ASSERT_GE (store.now (), info.modified);
-	ASSERT_LT (store.now () - info.modified, 10);
+	ASSERT_GE (rai::seconds_since_epoch (), info.modified);
+	ASSERT_LT (rai::seconds_since_epoch () - info.modified, 10);
 }
 
 // Make sure the checksum is the same when ledger reloaded
@@ -970,7 +970,7 @@ TEST (ledger, fail_send_bad_signature)
 	ASSERT_EQ (rai::process_result::bad_signature, result1.code);
 }
 
-TEST (ledger, fail_send_overspend)
+TEST (ledger, fail_send_negative_spend)
 {
 	bool init (false);
 	rai::block_store store (init, rai::unique_path ());
@@ -984,7 +984,7 @@ TEST (ledger, fail_send_overspend)
 	ASSERT_EQ (rai::process_result::progress, ledger.process (transaction, block1).code);
 	rai::keypair key2;
 	rai::send_block block2 (block1.hash (), key2.pub, 2, rai::test_genesis_key.prv, rai::test_genesis_key.pub, 0);
-	ASSERT_EQ (rai::process_result::overspend, ledger.process (transaction, block2).code);
+	ASSERT_EQ (rai::process_result::negative_spend, ledger.process (transaction, block2).code);
 }
 
 TEST (ledger, fail_send_fork)

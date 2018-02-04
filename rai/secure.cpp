@@ -1,6 +1,7 @@
 #include <rai/secure.hpp>
 
 #include <rai/lib/interface.h>
+#include <rai/node/common.hpp>
 #include <rai/node/working.hpp>
 #include <rai/versioning.hpp>
 
@@ -274,28 +275,28 @@ void rai::account_info::serialize (rai::stream & stream_a) const
 
 bool rai::account_info::deserialize (rai::stream & stream_a)
 {
-	auto result (read (stream_a, head.bytes));
-	if (!result)
+	auto error (read (stream_a, head.bytes));
+	if (!error)
 	{
-		result = read (stream_a, rep_block.bytes);
-		if (!result)
+		error = read (stream_a, rep_block.bytes);
+		if (!error)
 		{
-			result = read (stream_a, open_block.bytes);
-			if (!result)
+			error = read (stream_a, open_block.bytes);
+			if (!error)
 			{
-				result = read (stream_a, balance.bytes);
-				if (!result)
+				error = read (stream_a, balance.bytes);
+				if (!error)
 				{
-					result = read (stream_a, modified);
-					if (!result)
+					error = read (stream_a, modified);
+					if (!error)
 					{
-						result = read (stream_a, block_count);
+						error = read (stream_a, block_count);
 					}
 				}
 			}
 		}
 	}
-	return result;
+	return error;
 }
 
 bool rai::account_info::operator== (rai::account_info const & other_a) const
@@ -593,9 +594,7 @@ public:
 	result (0)
 	{
 	}
-	virtual ~representative_visitor ()
-	{
-	}
+	virtual ~representative_visitor () = default;
 	void compute (rai::block_hash const & hash_a)
 	{
 		current = hash_a;
@@ -801,9 +800,7 @@ public:
 	store (store_a)
 	{
 	}
-	virtual ~set_predecessor ()
-	{
-	}
+	virtual ~set_predecessor () = default;
 	void fill_value (rai::block const & block_a)
 	{
 		auto hash (block_a.hash ());
@@ -1027,30 +1024,30 @@ void rai::block_store::block_del (MDB_txn * transaction_a, rai::block_hash const
 
 bool rai::block_store::block_exists (MDB_txn * transaction_a, rai::block_hash const & hash_a)
 {
-	auto result (true);
+	auto exists (true);
 	rai::mdb_val junk;
 	auto status (mdb_get (transaction_a, send_blocks, rai::mdb_val (hash_a), junk));
 	assert (status == 0 || status == MDB_NOTFOUND);
-	result = status == 0;
-	if (!result)
+	exists = status == 0;
+	if (!exists)
 	{
 		auto status (mdb_get (transaction_a, receive_blocks, rai::mdb_val (hash_a), junk));
 		assert (status == 0 || status == MDB_NOTFOUND);
-		result = status == 0;
-		if (!result)
+		exists = status == 0;
+		if (!exists)
 		{
 			auto status (mdb_get (transaction_a, open_blocks, rai::mdb_val (hash_a), junk));
 			assert (status == 0 || status == MDB_NOTFOUND);
-			result = status == 0;
-			if (!result)
+			exists = status == 0;
+			if (!exists)
 			{
 				auto status (mdb_get (transaction_a, change_blocks, rai::mdb_val (hash_a), junk));
 				assert (status == 0 || status == MDB_NOTFOUND);
-				result = status == 0;
+				exists = status == 0;
 			}
 		}
 	}
-	return result;
+	return exists;
 }
 
 rai::block_counts rai::block_store::block_count (MDB_txn * transaction_a)
@@ -1271,12 +1268,12 @@ void rai::pending_key::serialize (rai::stream & stream_a) const
 
 bool rai::pending_key::deserialize (rai::stream & stream_a)
 {
-	auto result (rai::read (stream_a, account.bytes));
-	if (!result)
+	auto error (rai::read (stream_a, account.bytes));
+	if (!error)
 	{
-		result = rai::read (stream_a, hash.bytes);
+		error = rai::read (stream_a, hash.bytes);
 	}
-	return result;
+	return error;
 }
 
 bool rai::pending_key::operator== (rai::pending_key const & other_a) const
@@ -1375,12 +1372,12 @@ void rai::block_info::serialize (rai::stream & stream_a) const
 
 bool rai::block_info::deserialize (rai::stream & stream_a)
 {
-	auto result (rai::read (stream_a, account.bytes));
-	if (!result)
+	auto error (rai::read (stream_a, account.bytes));
+	if (!error)
 	{
-		result = rai::read (stream_a, balance.bytes);
+		error = rai::read (stream_a, balance.bytes);
 	}
-	return result;
+	return error;
 }
 
 bool rai::block_info::operator== (rai::block_info const & other_a) const
@@ -1730,9 +1727,7 @@ public:
 	store (store_a)
 	{
 	}
-	virtual ~root_visitor ()
-	{
-	}
+	virtual ~root_visitor () = default;
 	void send_block (rai::send_block const & block_a) override
 	{
 		result = block_a.previous ();
@@ -1797,7 +1792,7 @@ class ledger_processor : public rai::block_visitor
 {
 public:
 	ledger_processor (rai::ledger &, MDB_txn *);
-	virtual ~ledger_processor ();
+	virtual ~ledger_processor () = default;
 	void send_block (rai::send_block const &) override;
 	void receive_block (rai::receive_block const &) override;
 	void open_block (rai::open_block const &) override;
@@ -1812,7 +1807,7 @@ class amount_visitor : public rai::block_visitor
 {
 public:
 	amount_visitor (MDB_txn *, rai::block_store &);
-	virtual ~amount_visitor ();
+	virtual ~amount_visitor () = default;
 	void compute (rai::block_hash const &);
 	void send_block (rai::send_block const &) override;
 	void receive_block (rai::receive_block const &) override;
@@ -1829,7 +1824,7 @@ class balance_visitor : public rai::block_visitor
 {
 public:
 	balance_visitor (MDB_txn *, rai::block_store &);
-	virtual ~balance_visitor ();
+	virtual ~balance_visitor () = default;
 	void compute (rai::block_hash const &);
 	void send_block (rai::send_block const &) override;
 	void receive_block (rai::receive_block const &) override;
@@ -1844,10 +1839,6 @@ public:
 amount_visitor::amount_visitor (MDB_txn * transaction_a, rai::block_store & store_a) :
 transaction (transaction_a),
 store (store_a)
-{
-}
-
-amount_visitor::~amount_visitor ()
 {
 }
 
@@ -1892,10 +1883,6 @@ transaction (transaction_a),
 store (store_a),
 current (0),
 result (0)
-{
-}
-
-balance_visitor::~balance_visitor ()
 {
 }
 
@@ -1953,9 +1940,7 @@ public:
 	ledger (ledger_a)
 	{
 	}
-	virtual ~rollback_visitor ()
-	{
-	}
+	virtual ~rollback_visitor () = default;
 	void send_block (rai::send_block const & block_a) override
 	{
 		auto hash (block_a.hash ());
@@ -2306,7 +2291,7 @@ void rai::ledger::change_latest (MDB_txn * transaction_a, rai::account const & a
 		info.head = hash_a;
 		info.rep_block = rep_block_a;
 		info.balance = balance_a;
-		info.modified = store.now ();
+		info.modified = rai::seconds_since_epoch ();
 		info.block_count = block_count_a;
 		store.account_put (transaction_a, account_a, info);
 		if (!(block_count_a % store.block_info_max))
@@ -2422,7 +2407,7 @@ void ledger_processor::send_block (rai::send_block const & block_a)
 					auto latest_error (ledger.store.account_get (transaction, account, info));
 					assert (!latest_error);
 					assert (info.head == block_a.hashables.previous);
-					result.code = info.balance.number () >= block_a.hashables.balance.number () ? rai::process_result::progress : rai::process_result::overspend; // Is this trying to spend more than they have (Malicious)
+					result.code = info.balance.number () >= block_a.hashables.balance.number () ? rai::process_result::progress : rai::process_result::negative_spend; // Is this trying to spend a negative amount (Malicious)
 					if (result.code == rai::process_result::progress)
 					{
 						auto amount (info.balance.number () - block_a.hashables.balance.number ());
@@ -2540,10 +2525,6 @@ void ledger_processor::open_block (rai::open_block const & block_a)
 ledger_processor::ledger_processor (rai::ledger & ledger_a, MDB_txn * transaction_a) :
 ledger (ledger_a),
 transaction (transaction_a)
-{
-}
-
-ledger_processor::~ledger_processor ()
 {
 }
 
@@ -2666,7 +2647,7 @@ void rai::genesis::initialize (MDB_txn * transaction_a, rai::block_store & store
 	auto hash_l (hash ());
 	assert (store_a.latest_begin (transaction_a) == store_a.latest_end ());
 	store_a.block_put (transaction_a, hash_l, *open);
-	store_a.account_put (transaction_a, genesis_account, { hash_l, open->hash (), open->hash (), std::numeric_limits<rai::uint128_t>::max (), store_a.now (), 1 });
+	store_a.account_put (transaction_a, genesis_account, { hash_l, open->hash (), open->hash (), std::numeric_limits<rai::uint128_t>::max (), rai::seconds_since_epoch (), 1 });
 	store_a.representation_put (transaction_a, genesis_account, std::numeric_limits<rai::uint128_t>::max ());
 	store_a.checksum_put (transaction_a, 0, 0, hash_l);
 	store_a.frontier_put (transaction_a, hash_l, genesis_account);
