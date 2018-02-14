@@ -2,9 +2,9 @@
 set -euo pipefail
 IFS=$'\n\t'
 
-mkdir -p ~/RaiBlocks
-if [ ! -f ~/RaiBlocks/config.json ]; then
+mkdir -p ~/Raze
+if [ ! -f ~/Raze/config.json ]; then
   echo "Config File not found, adding default."
-  cp /usr/share/raiblocks/config.json ~/RaiBlocks/
+  cp /usr/share/raze/config.json ~/Raze/
 fi
-/usr/bin/rai_node --daemon
+/usr/bin/raze_node --daemon
