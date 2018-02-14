@@ -1,7 +1,8 @@
 #!/bin/bash
 set -eu
 
-docker pull "$2" || true
+scripts="$(dirname "$0")"
+
+"$scripts"/custom-timeout.sh 20 docker pull "$2" || true
 echo "Building $2"
-# Output for the build is WAY too long for Travis logs
-docker build -f "$1" -t "$2" --cache-from "$2" . > /dev/null 2>&1
+"$scripts"/custom-timeout.sh 30 docker build -f "$1" -t "$2" --cache-from "$2" .
