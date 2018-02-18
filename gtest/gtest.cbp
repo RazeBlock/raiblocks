@@ -1,0 +1,249 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6"/>
+	<Project>
+		<Option title="gtest"/>
+		<Option makefile_is_custom="1"/>
+		<Option compiler="gcc"/>
+		<Option virtualFolders="CMake Files\;CMake Files\gtest\;CMake Files\gtest\cmake\;CMake Files\miniupnp\;CMake Files\miniupnp\miniupnpc\;CMake Files\..\;CMake Files\..\..\;CMake Files\..\..\..\;CMake Files\..\..\..\..\;CMake Files\..\..\..\..\..\;CMake Files\..\..\..\..\..\usr\;CMake Files\..\..\..\..\..\usr\lib\;CMake Files\..\..\..\..\..\usr\lib\x86_64-linux-gnu\;CMake Files\..\..\..\..\..\usr\lib\x86_64-linux-gnu\cmake\;CMake Files\..\..\..\..\..\usr\lib\x86_64-linux-gnu\cmake\Qt5\;CMake Files\..\..\..\..\..\usr\lib\x86_64-linux-gnu\cmake\Qt5Core\;CMake Files\..\..\..\..\..\usr\lib\x86_64-linux-gnu\cmake\Qt5Gui\;CMake Files\..\..\..\..\..\usr\lib\x86_64-linux-gnu\cmake\Qt5Widgets\;CMake Files\..\..\..\..\..\usr\lib\x86_64-linux-gnu\cmake\Qt5Test\;"/>
+		<Build>
+			<Target title="all">
+				<Option working_dir="/home/carlo/com/raze/razeblock/gtest"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/carlo/com/raze/razeblock/gtest/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/carlo/com/raze/razeblock/gtest/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/carlo/com/raze/razeblock/gtest/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/carlo/com/raze/razeblock/gtest/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="gtest_main">
+				<Option output="/home/carlo/com/raze/razeblock/gtest/libgtest_main.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/carlo/com/raze/razeblock/gtest"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/include/x86_64-linux-gnu/qt5"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/qt5/QtCore"/>
+					<Add directory="/usr/lib/x86_64-linux-gnu/qt5/mkspecs/linux-g++-64"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/qt5/QtGui"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/qt5/QtWidgets"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/qt5/QtTest"/>
+					<Add directory="/home/carlo/com/raze/razeblock"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/home/carlo/com/raze/razeblock/phc-winner-argon2/include"/>
+					<Add directory="/home/carlo/com/raze/razeblock/phc-winner-argon2/src"/>
+					<Add directory="/home/carlo/com/raze/razeblock/blake2"/>
+					<Add directory="/home/carlo/com/raze/razeblock/gtest/include"/>
+					<Add directory="/home/carlo/com/raze/razeblock/gtest"/>
+					<Add directory="/usr/include/c++/5"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/5"/>
+					<Add directory="/usr/include/c++/5/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/carlo/com/raze/razeblock/gtest/Makefile&quot;  VERBOSE=1 gtest_main"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/carlo/com/raze/razeblock/gtest/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/carlo/com/raze/razeblock/gtest/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/carlo/com/raze/razeblock/gtest/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="gtest_main/fast">
+				<Option output="/home/carlo/com/raze/razeblock/gtest/libgtest_main.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/carlo/com/raze/razeblock/gtest"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/include/x86_64-linux-gnu/qt5"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/qt5/QtCore"/>
+					<Add directory="/usr/lib/x86_64-linux-gnu/qt5/mkspecs/linux-g++-64"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/qt5/QtGui"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/qt5/QtWidgets"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/qt5/QtTest"/>
+					<Add directory="/home/carlo/com/raze/razeblock"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/home/carlo/com/raze/razeblock/phc-winner-argon2/include"/>
+					<Add directory="/home/carlo/com/raze/razeblock/phc-winner-argon2/src"/>
+					<Add directory="/home/carlo/com/raze/razeblock/blake2"/>
+					<Add directory="/home/carlo/com/raze/razeblock/gtest/include"/>
+					<Add directory="/home/carlo/com/raze/razeblock/gtest"/>
+					<Add directory="/usr/include/c++/5"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/5"/>
+					<Add directory="/usr/include/c++/5/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/carlo/com/raze/razeblock/gtest/Makefile&quot;  VERBOSE=1 gtest_main/fast"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/carlo/com/raze/razeblock/gtest/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/carlo/com/raze/razeblock/gtest/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/carlo/com/raze/razeblock/gtest/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="gtest">
+				<Option output="/home/carlo/com/raze/razeblock/gtest/libgtest.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/carlo/com/raze/razeblock/gtest"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/include/x86_64-linux-gnu/qt5"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/qt5/QtCore"/>
+					<Add directory="/usr/lib/x86_64-linux-gnu/qt5/mkspecs/linux-g++-64"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/qt5/QtGui"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/qt5/QtWidgets"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/qt5/QtTest"/>
+					<Add directory="/home/carlo/com/raze/razeblock"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/home/carlo/com/raze/razeblock/phc-winner-argon2/include"/>
+					<Add directory="/home/carlo/com/raze/razeblock/phc-winner-argon2/src"/>
+					<Add directory="/home/carlo/com/raze/razeblock/blake2"/>
+					<Add directory="/home/carlo/com/raze/razeblock/gtest/include"/>
+					<Add directory="/home/carlo/com/raze/razeblock/gtest"/>
+					<Add directory="/usr/include/c++/5"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/5"/>
+					<Add directory="/usr/include/c++/5/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/carlo/com/raze/razeblock/gtest/Makefile&quot;  VERBOSE=1 gtest"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/carlo/com/raze/razeblock/gtest/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/carlo/com/raze/razeblock/gtest/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/carlo/com/raze/razeblock/gtest/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="gtest/fast">
+				<Option output="/home/carlo/com/raze/razeblock/gtest/libgtest.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/carlo/com/raze/razeblock/gtest"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/include/x86_64-linux-gnu/qt5"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/qt5/QtCore"/>
+					<Add directory="/usr/lib/x86_64-linux-gnu/qt5/mkspecs/linux-g++-64"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/qt5/QtGui"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/qt5/QtWidgets"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/qt5/QtTest"/>
+					<Add directory="/home/carlo/com/raze/razeblock"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/home/carlo/com/raze/razeblock/phc-winner-argon2/include"/>
+					<Add directory="/home/carlo/com/raze/razeblock/phc-winner-argon2/src"/>
+					<Add directory="/home/carlo/com/raze/razeblock/blake2"/>
+					<Add directory="/home/carlo/com/raze/razeblock/gtest/include"/>
+					<Add directory="/home/carlo/com/raze/razeblock/gtest"/>
+					<Add directory="/usr/include/c++/5"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/5"/>
+					<Add directory="/usr/include/c++/5/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/carlo/com/raze/razeblock/gtest/Makefile&quot;  VERBOSE=1 gtest/fast"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/carlo/com/raze/razeblock/gtest/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/carlo/com/raze/razeblock/gtest/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/carlo/com/raze/razeblock/gtest/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+		</Build>
+		<Unit filename="/home/carlo/com/raze/razeblock/gtest/src/gtest-all.cc">
+			<Option target="gtest"/>
+		</Unit>
+		<Unit filename="/home/carlo/com/raze/razeblock/gtest/src/gtest_main.cc">
+			<Option target="gtest_main"/>
+		</Unit>
+		<Unit filename="/home/carlo/com/raze/razeblock/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\"/>
+		</Unit>
+		<Unit filename="/home/carlo/com/raze/razeblock/resources.qrc">
+			<Option virtualFolder="CMake Files\"/>
+		</Unit>
+		<Unit filename="/home/carlo/com/raze/razeblock/gtest/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\gtest\"/>
+		</Unit>
+		<Unit filename="/home/carlo/com/raze/razeblock/gtest/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\gtest\"/>
+		</Unit>
+		<Unit filename="/home/carlo/com/raze/razeblock/gtest/cmake/internal_utils.cmake">
+			<Option virtualFolder="CMake Files\gtest\cmake\"/>
+		</Unit>
+		<Unit filename="/home/carlo/com/raze/razeblock/gtest/cmake/internal_utils.cmake">
+			<Option virtualFolder="CMake Files\gtest\cmake\"/>
+		</Unit>
+		<Unit filename="/home/carlo/com/raze/razeblock/miniupnp/miniupnpc/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\miniupnp\miniupnpc\"/>
+		</Unit>
+		<Unit filename="/home/carlo/com/raze/razeblock/miniupnp/miniupnpc/miniupnpcstrings.h.cmake">
+			<Option virtualFolder="CMake Files\miniupnp\miniupnpc\"/>
+		</Unit>
+		<Unit filename="/home/carlo/com/raze/razeblock/miniupnp/miniupnpc/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\miniupnp\miniupnpc\"/>
+		</Unit>
+		<Unit filename="/home/carlo/com/raze/razeblock/miniupnp/miniupnpc/miniupnpcstrings.h.cmake">
+			<Option virtualFolder="CMake Files\miniupnp\miniupnpc\"/>
+		</Unit>
+		<Unit filename="/home/carlo/com/raze/razeblock/../../../../../usr/lib/x86_64-linux-gnu/cmake/Qt5/Qt5ConfigVersion.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\usr\lib\x86_64-linux-gnu\cmake\Qt5\"/>
+		</Unit>
+		<Unit filename="/home/carlo/com/raze/razeblock/../../../../../usr/lib/x86_64-linux-gnu/cmake/Qt5/Qt5Config.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\usr\lib\x86_64-linux-gnu\cmake\Qt5\"/>
+		</Unit>
+		<Unit filename="/home/carlo/com/raze/razeblock/../../../../../usr/lib/x86_64-linux-gnu/cmake/Qt5Core/Qt5CoreConfigVersion.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\usr\lib\x86_64-linux-gnu\cmake\Qt5Core\"/>
+		</Unit>
+		<Unit filename="/home/carlo/com/raze/razeblock/../../../../../usr/lib/x86_64-linux-gnu/cmake/Qt5Core/Qt5CoreConfig.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\usr\lib\x86_64-linux-gnu\cmake\Qt5Core\"/>
+		</Unit>
+		<Unit filename="/home/carlo/com/raze/razeblock/../../../../../usr/lib/x86_64-linux-gnu/cmake/Qt5Core/Qt5CoreConfigExtras.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\usr\lib\x86_64-linux-gnu\cmake\Qt5Core\"/>
+		</Unit>
+		<Unit filename="/home/carlo/com/raze/razeblock/../../../../../usr/lib/x86_64-linux-gnu/cmake/Qt5Core/Qt5CoreConfigExtrasMkspecDir.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\usr\lib\x86_64-linux-gnu\cmake\Qt5Core\"/>
+		</Unit>
+		<Unit filename="/home/carlo/com/raze/razeblock/../../../../../usr/lib/x86_64-linux-gnu/cmake/Qt5Core/Qt5CoreMacros.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\usr\lib\x86_64-linux-gnu\cmake\Qt5Core\"/>
+		</Unit>
+		<Unit filename="/home/carlo/com/raze/razeblock/../../../../../usr/lib/x86_64-linux-gnu/cmake/Qt5Gui/Qt5GuiConfigVersion.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\usr\lib\x86_64-linux-gnu\cmake\Qt5Gui\"/>
+		</Unit>
+		<Unit filename="/home/carlo/com/raze/razeblock/../../../../../usr/lib/x86_64-linux-gnu/cmake/Qt5Gui/Qt5GuiConfig.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\usr\lib\x86_64-linux-gnu\cmake\Qt5Gui\"/>
+		</Unit>
+		<Unit filename="/home/carlo/com/raze/razeblock/../../../../../usr/lib/x86_64-linux-gnu/cmake/Qt5Gui/Qt5GuiConfigExtras.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\usr\lib\x86_64-linux-gnu\cmake\Qt5Gui\"/>
+		</Unit>
+		<Unit filename="/home/carlo/com/raze/razeblock/../../../../../usr/lib/x86_64-linux-gnu/cmake/Qt5Widgets/Qt5WidgetsConfigVersion.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\usr\lib\x86_64-linux-gnu\cmake\Qt5Widgets\"/>
+		</Unit>
+		<Unit filename="/home/carlo/com/raze/razeblock/../../../../../usr/lib/x86_64-linux-gnu/cmake/Qt5Widgets/Qt5WidgetsConfig.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\usr\lib\x86_64-linux-gnu\cmake\Qt5Widgets\"/>
+		</Unit>
+		<Unit filename="/home/carlo/com/raze/razeblock/../../../../../usr/lib/x86_64-linux-gnu/cmake/Qt5Widgets/Qt5WidgetsConfigExtras.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\usr\lib\x86_64-linux-gnu\cmake\Qt5Widgets\"/>
+		</Unit>
+		<Unit filename="/home/carlo/com/raze/razeblock/../../../../../usr/lib/x86_64-linux-gnu/cmake/Qt5Widgets/Qt5WidgetsMacros.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\usr\lib\x86_64-linux-gnu\cmake\Qt5Widgets\"/>
+		</Unit>
+		<Unit filename="/home/carlo/com/raze/razeblock/../../../../../usr/lib/x86_64-linux-gnu/cmake/Qt5Test/Qt5TestConfigVersion.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\usr\lib\x86_64-linux-gnu\cmake\Qt5Test\"/>
+		</Unit>
+		<Unit filename="/home/carlo/com/raze/razeblock/../../../../../usr/lib/x86_64-linux-gnu/cmake/Qt5Test/Qt5TestConfig.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\usr\lib\x86_64-linux-gnu\cmake\Qt5Test\"/>
+		</Unit>
+		<Unit filename="/home/carlo/com/raze/razeblock/../../../../../usr/lib/x86_64-linux-gnu/cmake/Qt5Test/Qt5TestConfigExtras.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\usr\lib\x86_64-linux-gnu\cmake\Qt5Test\"/>
+		</Unit>
+	</Project>
+</CodeBlocks_project_file>
