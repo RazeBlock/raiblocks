@@ -231,7 +231,7 @@ void raze::network::republish_vote (std::chrono::steady_clock::time_point const 
 {
 	if (last_vote < std::chrono::steady_clock::now () - std::chrono::seconds (1))
 	{
-		if (node.weight (vote_a->account) > raze::Mxrb_ratio * 256)
+		if (node.weight (vote_a->account) > raze::Mraze_ratio * 256)
 		{
 			raze::confirm_ack confirm (vote_a);
 			std::shared_ptr<std::vector<uint8_t>> bytes (new std::vector<uint8_t>);
@@ -744,7 +744,7 @@ raze::node_config::node_config (uint16_t peering_port_a, raze::logging const & l
 peering_port (peering_port_a),
 logging (logging_a),
 bootstrap_fraction_numerator (1),
-receive_minimum (raze::xrb_ratio),
+receive_minimum (raze::raze_ratio),
 inactive_supply (0),
 password_fanout (1024),
 io_threads (std::max<unsigned> (4, std::thread::hardware_concurrency ())),
@@ -865,14 +865,14 @@ bool raze::node_config::upgrade_json (unsigned version, boost::property_tree::pt
 		}
 		case 3:
 			tree_a.erase ("receive_minimum");
-			tree_a.put ("receive_minimum", raze::xrb_ratio.convert_to<std::string> ());
+			tree_a.put ("receive_minimum", raze::raze_ratio.convert_to<std::string> ());
 			tree_a.erase ("version");
 			tree_a.put ("version", "4");
 			result = true;
 			break;
 		case 4:
 			tree_a.erase ("receive_minimum");
-			tree_a.put ("receive_minimum", raze::xrb_ratio.convert_to<std::string> ());
+			tree_a.put ("receive_minimum", raze::raze_ratio.convert_to<std::string> ());
 			tree_a.erase ("version");
 			tree_a.put ("version", "5");
 			result = true;
@@ -1538,7 +1538,7 @@ block_processor_thread ([this]() { this->block_processor.process_blocks (); })
 					{
 						break;
 					}
-					BOOST_LOG (log) << "Using bootstrap rep weight: " << account.to_account () << " -> " << weight.format_balance (Mxrb_ratio, 0, true) << " XRB";
+					BOOST_LOG (log) << "Using bootstrap rep weight: " << account.to_account () << " -> " << weight.format_balance (Mraze_ratio, 0, true) << " RAZE";
 					ledger.bootstrap_weights[account] = weight.number ();
 				}
 			}
@@ -2008,13 +2008,13 @@ void raze::node::backup_wallet ()
 
 int raze::node::price (raze::uint128_t const & balance_a, int amount_a)
 {
-	assert (balance_a >= amount_a * raze::Gxrb_ratio);
+	assert (balance_a >= amount_a * raze::Graze_ratio);
 	auto balance_l (balance_a);
 	double result (0.0);
 	for (auto i (0); i < amount_a; ++i)
 	{
-		balance_l -= raze::Gxrb_ratio;
-		auto balance_scaled ((balance_l / raze::Mxrb_ratio).convert_to<double> ());
+		balance_l -= raze::Graze_ratio;
+		auto balance_scaled ((balance_l / raze::Mraze_ratio).convert_to<double> ());
 		auto units (balance_scaled / 1000.0);
 		auto unit_price (((free_cutoff - units) / free_cutoff) * price_max);
 		result += std::min (std::max (0.0, unit_price), price_max);

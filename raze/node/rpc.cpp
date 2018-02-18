@@ -1874,7 +1874,7 @@ void raze::rpc_handler::mraze_from_raw ()
 	raze::uint128_union amount;
 	if (!amount.decode_dec (amount_text))
 	{
-		auto result (amount.number () / raze::Mxrb_ratio);
+		auto result (amount.number () / raze::Mraze_ratio);
 		boost::property_tree::ptree response_l;
 		response_l.put ("amount", result.convert_to<std::string> ());
 		response (response_l);
@@ -1891,7 +1891,7 @@ void raze::rpc_handler::mraze_to_raw ()
 	raze::uint128_union amount;
 	if (!amount.decode_dec (amount_text))
 	{
-		auto result (amount.number () * raze::Mxrb_ratio);
+		auto result (amount.number () * raze::Mraze_ratio);
 		if (result > amount.number ())
 		{
 			boost::property_tree::ptree response_l;
@@ -1915,7 +1915,7 @@ void raze::rpc_handler::kraze_from_raw ()
 	raze::uint128_union amount;
 	if (!amount.decode_dec (amount_text))
 	{
-		auto result (amount.number () / raze::kxrb_ratio);
+		auto result (amount.number () / raze::kraze_ratio);
 		boost::property_tree::ptree response_l;
 		response_l.put ("amount", result.convert_to<std::string> ());
 		response (response_l);
@@ -1932,7 +1932,7 @@ void raze::rpc_handler::kraze_to_raw ()
 	raze::uint128_union amount;
 	if (!amount.decode_dec (amount_text))
 	{
-		auto result (amount.number () * raze::kxrb_ratio);
+		auto result (amount.number () * raze::kraze_ratio);
 		if (result > amount.number ())
 		{
 			boost::property_tree::ptree response_l;
@@ -2463,7 +2463,7 @@ void raze::rpc_handler::raze_from_raw ()
 	raze::uint128_union amount;
 	if (!amount.decode_dec (amount_text))
 	{
-		auto result (amount.number () / raze::xrb_ratio);
+		auto result (amount.number () / raze::raze_ratio);
 		boost::property_tree::ptree response_l;
 		response_l.put ("amount", result.convert_to<std::string> ());
 		response (response_l);
@@ -2480,7 +2480,7 @@ void raze::rpc_handler::raze_to_raw ()
 	raze::uint128_union amount;
 	if (!amount.decode_dec (amount_text))
 	{
-		auto result (amount.number () * raze::xrb_ratio);
+		auto result (amount.number () * raze::raze_ratio);
 		if (result > amount.number ())
 		{
 			boost::property_tree::ptree response_l;

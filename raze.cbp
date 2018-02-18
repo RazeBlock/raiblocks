@@ -1,0 +1,2581 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6"/>
+	<Project>
+		<Option title="raze"/>
+		<Option makefile_is_custom="1"/>
+		<Option compiler="gcc"/>
+		<Option virtualFolders="CMake Files\;CMake Files\gtest\;CMake Files\gtest\cmake\;CMake Files\miniupnp\;CMake Files\miniupnp\miniupnpc\;CMake Files\..\;CMake Files\..\..\;CMake Files\..\..\..\;CMake Files\..\..\..\..\;CMake Files\..\..\..\..\..\;CMake Files\..\..\..\..\..\usr\;CMake Files\..\..\..\..\..\usr\lib\;CMake Files\..\..\..\..\..\usr\lib\x86_64-linux-gnu\;CMake Files\..\..\..\..\..\usr\lib\x86_64-linux-gnu\cmake\;CMake Files\..\..\..\..\..\usr\lib\x86_64-linux-gnu\cmake\Qt5\;CMake Files\..\..\..\..\..\usr\lib\x86_64-linux-gnu\cmake\Qt5Core\;CMake Files\..\..\..\..\..\usr\lib\x86_64-linux-gnu\cmake\Qt5Gui\;CMake Files\..\..\..\..\..\usr\lib\x86_64-linux-gnu\cmake\Qt5Widgets\;CMake Files\..\..\..\..\..\usr\lib\x86_64-linux-gnu\cmake\Qt5Test\;"/>
+		<Build>
+			<Target title="all">
+				<Option working_dir="/home/carlo/com/raze/razeblock"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/carlo/com/raze/razeblock/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/carlo/com/raze/razeblock/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/carlo/com/raze/razeblock/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/carlo/com/raze/razeblock/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="install/strip">
+				<Option working_dir="/home/carlo/com/raze/razeblock"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/carlo/com/raze/razeblock/Makefile&quot;  VERBOSE=1 install/strip"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/carlo/com/raze/razeblock/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/carlo/com/raze/razeblock/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/carlo/com/raze/razeblock/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="node">
+				<Option output="/home/carlo/com/raze/razeblock/libnode.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/carlo/com/raze/razeblock"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/include/x86_64-linux-gnu/qt5"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/qt5/QtCore"/>
+					<Add directory="/usr/lib/x86_64-linux-gnu/qt5/mkspecs/linux-g++-64"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/qt5/QtGui"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/qt5/QtWidgets"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/qt5/QtTest"/>
+					<Add directory="/home/carlo/com/raze/razeblock"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/home/carlo/com/raze/razeblock/phc-winner-argon2/include"/>
+					<Add directory="/home/carlo/com/raze/razeblock/phc-winner-argon2/src"/>
+					<Add directory="/home/carlo/com/raze/razeblock/blake2"/>
+					<Add directory="/home/carlo/com/raze/razeblock/gtest/include"/>
+					<Add directory="/home/carlo/com/raze/razeblock/beast/include"/>
+					<Add directory="/home/carlo/com/raze/razeblock/miniupnp/miniupnpc"/>
+					<Add directory="/usr/include/c++/5"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/5"/>
+					<Add directory="/usr/include/c++/5/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/carlo/com/raze/razeblock/Makefile&quot;  VERBOSE=1 node"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/carlo/com/raze/razeblock/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/carlo/com/raze/razeblock/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/carlo/com/raze/razeblock/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="node/fast">
+				<Option output="/home/carlo/com/raze/razeblock/libnode.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/carlo/com/raze/razeblock"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/include/x86_64-linux-gnu/qt5"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/qt5/QtCore"/>
+					<Add directory="/usr/lib/x86_64-linux-gnu/qt5/mkspecs/linux-g++-64"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/qt5/QtGui"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/qt5/QtWidgets"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/qt5/QtTest"/>
+					<Add directory="/home/carlo/com/raze/razeblock"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/home/carlo/com/raze/razeblock/phc-winner-argon2/include"/>
+					<Add directory="/home/carlo/com/raze/razeblock/phc-winner-argon2/src"/>
+					<Add directory="/home/carlo/com/raze/razeblock/blake2"/>
+					<Add directory="/home/carlo/com/raze/razeblock/gtest/include"/>
+					<Add directory="/home/carlo/com/raze/razeblock/beast/include"/>
+					<Add directory="/home/carlo/com/raze/razeblock/miniupnp/miniupnpc"/>
+					<Add directory="/usr/include/c++/5"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/5"/>
+					<Add directory="/usr/include/c++/5/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/carlo/com/raze/razeblock/Makefile&quot;  VERBOSE=1 node/fast"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/carlo/com/raze/razeblock/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/carlo/com/raze/razeblock/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/carlo/com/raze/razeblock/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="blake2">
+				<Option output="/home/carlo/com/raze/razeblock/libblake2.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/carlo/com/raze/razeblock"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/include/x86_64-linux-gnu/qt5"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/qt5/QtCore"/>
+					<Add directory="/usr/lib/x86_64-linux-gnu/qt5/mkspecs/linux-g++-64"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/qt5/QtGui"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/qt5/QtWidgets"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/qt5/QtTest"/>
+					<Add directory="/home/carlo/com/raze/razeblock"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/home/carlo/com/raze/razeblock/phc-winner-argon2/include"/>
+					<Add directory="/home/carlo/com/raze/razeblock/phc-winner-argon2/src"/>
+					<Add directory="/home/carlo/com/raze/razeblock/blake2"/>
+					<Add directory="/home/carlo/com/raze/razeblock/gtest/include"/>
+					<Add directory="/home/carlo/com/raze/razeblock/beast/include"/>
+					<Add directory="/home/carlo/com/raze/razeblock/miniupnp/miniupnpc"/>
+					<Add directory="/usr/include/c++/5"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/5"/>
+					<Add directory="/usr/include/c++/5/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/carlo/com/raze/razeblock/Makefile&quot;  VERBOSE=1 blake2"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/carlo/com/raze/razeblock/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/carlo/com/raze/razeblock/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/carlo/com/raze/razeblock/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="blake2/fast">
+				<Option output="/home/carlo/com/raze/razeblock/libblake2.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/carlo/com/raze/razeblock"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/include/x86_64-linux-gnu/qt5"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/qt5/QtCore"/>
+					<Add directory="/usr/lib/x86_64-linux-gnu/qt5/mkspecs/linux-g++-64"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/qt5/QtGui"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/qt5/QtWidgets"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/qt5/QtTest"/>
+					<Add directory="/home/carlo/com/raze/razeblock"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/home/carlo/com/raze/razeblock/phc-winner-argon2/include"/>
+					<Add directory="/home/carlo/com/raze/razeblock/phc-winner-argon2/src"/>
+					<Add directory="/home/carlo/com/raze/razeblock/blake2"/>
+					<Add directory="/home/carlo/com/raze/razeblock/gtest/include"/>
+					<Add directory="/home/carlo/com/raze/razeblock/beast/include"/>
+					<Add directory="/home/carlo/com/raze/razeblock/miniupnp/miniupnpc"/>
+					<Add directory="/usr/include/c++/5"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/5"/>
+					<Add directory="/usr/include/c++/5/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/carlo/com/raze/razeblock/Makefile&quot;  VERBOSE=1 blake2/fast"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/carlo/com/raze/razeblock/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/carlo/com/raze/razeblock/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/carlo/com/raze/razeblock/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="raze_wallet">
+				<Option output="/home/carlo/com/raze/razeblock/raze_wallet" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/carlo/com/raze/razeblock"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DQT_CORE_LIB"/>
+					<Add option="-DQT_GUI_LIB"/>
+					<Add option="-DQT_WIDGETS_LIB"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/qt5"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/qt5/QtCore"/>
+					<Add directory="/usr/lib/x86_64-linux-gnu/qt5/mkspecs/linux-g++-64"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/qt5/QtGui"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/qt5/QtWidgets"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/qt5/QtTest"/>
+					<Add directory="/home/carlo/com/raze/razeblock"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/home/carlo/com/raze/razeblock/phc-winner-argon2/include"/>
+					<Add directory="/home/carlo/com/raze/razeblock/phc-winner-argon2/src"/>
+					<Add directory="/home/carlo/com/raze/razeblock/blake2"/>
+					<Add directory="/home/carlo/com/raze/razeblock/gtest/include"/>
+					<Add directory="/home/carlo/com/raze/razeblock/beast/include"/>
+					<Add directory="/home/carlo/com/raze/razeblock/miniupnp/miniupnpc"/>
+					<Add directory="/usr/include/c++/5"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/5"/>
+					<Add directory="/usr/include/c++/5/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/carlo/com/raze/razeblock/Makefile&quot;  VERBOSE=1 raze_wallet"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/carlo/com/raze/razeblock/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/carlo/com/raze/razeblock/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/carlo/com/raze/razeblock/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="raze_wallet/fast">
+				<Option output="/home/carlo/com/raze/razeblock/raze_wallet" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/carlo/com/raze/razeblock"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DQT_CORE_LIB"/>
+					<Add option="-DQT_GUI_LIB"/>
+					<Add option="-DQT_WIDGETS_LIB"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/qt5"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/qt5/QtCore"/>
+					<Add directory="/usr/lib/x86_64-linux-gnu/qt5/mkspecs/linux-g++-64"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/qt5/QtGui"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/qt5/QtWidgets"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/qt5/QtTest"/>
+					<Add directory="/home/carlo/com/raze/razeblock"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/home/carlo/com/raze/razeblock/phc-winner-argon2/include"/>
+					<Add directory="/home/carlo/com/raze/razeblock/phc-winner-argon2/src"/>
+					<Add directory="/home/carlo/com/raze/razeblock/blake2"/>
+					<Add directory="/home/carlo/com/raze/razeblock/gtest/include"/>
+					<Add directory="/home/carlo/com/raze/razeblock/beast/include"/>
+					<Add directory="/home/carlo/com/raze/razeblock/miniupnp/miniupnpc"/>
+					<Add directory="/usr/include/c++/5"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/5"/>
+					<Add directory="/usr/include/c++/5/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/carlo/com/raze/razeblock/Makefile&quot;  VERBOSE=1 raze_wallet/fast"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/carlo/com/raze/razeblock/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/carlo/com/raze/razeblock/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/carlo/com/raze/razeblock/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="raze_lib_static">
+				<Option output="/home/carlo/com/raze/razeblock/libraze_lib_static.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/carlo/com/raze/razeblock"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/include/x86_64-linux-gnu/qt5"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/qt5/QtCore"/>
+					<Add directory="/usr/lib/x86_64-linux-gnu/qt5/mkspecs/linux-g++-64"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/qt5/QtGui"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/qt5/QtWidgets"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/qt5/QtTest"/>
+					<Add directory="/home/carlo/com/raze/razeblock"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/home/carlo/com/raze/razeblock/phc-winner-argon2/include"/>
+					<Add directory="/home/carlo/com/raze/razeblock/phc-winner-argon2/src"/>
+					<Add directory="/home/carlo/com/raze/razeblock/blake2"/>
+					<Add directory="/home/carlo/com/raze/razeblock/gtest/include"/>
+					<Add directory="/home/carlo/com/raze/razeblock/beast/include"/>
+					<Add directory="/home/carlo/com/raze/razeblock/miniupnp/miniupnpc"/>
+					<Add directory="/usr/include/c++/5"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/5"/>
+					<Add directory="/usr/include/c++/5/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/carlo/com/raze/razeblock/Makefile&quot;  VERBOSE=1 raze_lib_static"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/carlo/com/raze/razeblock/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/carlo/com/raze/razeblock/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/carlo/com/raze/razeblock/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="raze_lib_static/fast">
+				<Option output="/home/carlo/com/raze/razeblock/libraze_lib_static.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/carlo/com/raze/razeblock"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/include/x86_64-linux-gnu/qt5"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/qt5/QtCore"/>
+					<Add directory="/usr/lib/x86_64-linux-gnu/qt5/mkspecs/linux-g++-64"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/qt5/QtGui"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/qt5/QtWidgets"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/qt5/QtTest"/>
+					<Add directory="/home/carlo/com/raze/razeblock"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/home/carlo/com/raze/razeblock/phc-winner-argon2/include"/>
+					<Add directory="/home/carlo/com/raze/razeblock/phc-winner-argon2/src"/>
+					<Add directory="/home/carlo/com/raze/razeblock/blake2"/>
+					<Add directory="/home/carlo/com/raze/razeblock/gtest/include"/>
+					<Add directory="/home/carlo/com/raze/razeblock/beast/include"/>
+					<Add directory="/home/carlo/com/raze/razeblock/miniupnp/miniupnpc"/>
+					<Add directory="/usr/include/c++/5"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/5"/>
+					<Add directory="/usr/include/c++/5/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/carlo/com/raze/razeblock/Makefile&quot;  VERBOSE=1 raze_lib_static/fast"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/carlo/com/raze/razeblock/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/carlo/com/raze/razeblock/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/carlo/com/raze/razeblock/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="lmdb">
+				<Option output="/home/carlo/com/raze/razeblock/liblmdb.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/carlo/com/raze/razeblock"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/include/x86_64-linux-gnu/qt5"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/qt5/QtCore"/>
+					<Add directory="/usr/lib/x86_64-linux-gnu/qt5/mkspecs/linux-g++-64"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/qt5/QtGui"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/qt5/QtWidgets"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/qt5/QtTest"/>
+					<Add directory="/home/carlo/com/raze/razeblock"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/home/carlo/com/raze/razeblock/phc-winner-argon2/include"/>
+					<Add directory="/home/carlo/com/raze/razeblock/phc-winner-argon2/src"/>
+					<Add directory="/home/carlo/com/raze/razeblock/blake2"/>
+					<Add directory="/home/carlo/com/raze/razeblock/gtest/include"/>
+					<Add directory="/home/carlo/com/raze/razeblock/beast/include"/>
+					<Add directory="/home/carlo/com/raze/razeblock/miniupnp/miniupnpc"/>
+					<Add directory="/usr/include/c++/5"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/5"/>
+					<Add directory="/usr/include/c++/5/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/carlo/com/raze/razeblock/Makefile&quot;  VERBOSE=1 lmdb"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/carlo/com/raze/razeblock/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/carlo/com/raze/razeblock/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/carlo/com/raze/razeblock/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="lmdb/fast">
+				<Option output="/home/carlo/com/raze/razeblock/liblmdb.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/carlo/com/raze/razeblock"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/include/x86_64-linux-gnu/qt5"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/qt5/QtCore"/>
+					<Add directory="/usr/lib/x86_64-linux-gnu/qt5/mkspecs/linux-g++-64"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/qt5/QtGui"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/qt5/QtWidgets"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/qt5/QtTest"/>
+					<Add directory="/home/carlo/com/raze/razeblock"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/home/carlo/com/raze/razeblock/phc-winner-argon2/include"/>
+					<Add directory="/home/carlo/com/raze/razeblock/phc-winner-argon2/src"/>
+					<Add directory="/home/carlo/com/raze/razeblock/blake2"/>
+					<Add directory="/home/carlo/com/raze/razeblock/gtest/include"/>
+					<Add directory="/home/carlo/com/raze/razeblock/beast/include"/>
+					<Add directory="/home/carlo/com/raze/razeblock/miniupnp/miniupnpc"/>
+					<Add directory="/usr/include/c++/5"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/5"/>
+					<Add directory="/usr/include/c++/5/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/carlo/com/raze/razeblock/Makefile&quot;  VERBOSE=1 lmdb/fast"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/carlo/com/raze/razeblock/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/carlo/com/raze/razeblock/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/carlo/com/raze/razeblock/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="cryptopp">
+				<Option output="/home/carlo/com/raze/razeblock/libcryptopp.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/carlo/com/raze/razeblock"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/include/x86_64-linux-gnu/qt5"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/qt5/QtCore"/>
+					<Add directory="/usr/lib/x86_64-linux-gnu/qt5/mkspecs/linux-g++-64"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/qt5/QtGui"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/qt5/QtWidgets"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/qt5/QtTest"/>
+					<Add directory="/home/carlo/com/raze/razeblock"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/home/carlo/com/raze/razeblock/phc-winner-argon2/include"/>
+					<Add directory="/home/carlo/com/raze/razeblock/phc-winner-argon2/src"/>
+					<Add directory="/home/carlo/com/raze/razeblock/blake2"/>
+					<Add directory="/home/carlo/com/raze/razeblock/gtest/include"/>
+					<Add directory="/home/carlo/com/raze/razeblock/beast/include"/>
+					<Add directory="/home/carlo/com/raze/razeblock/miniupnp/miniupnpc"/>
+					<Add directory="/usr/include/c++/5"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/5"/>
+					<Add directory="/usr/include/c++/5/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/carlo/com/raze/razeblock/Makefile&quot;  VERBOSE=1 cryptopp"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/carlo/com/raze/razeblock/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/carlo/com/raze/razeblock/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/carlo/com/raze/razeblock/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="cryptopp/fast">
+				<Option output="/home/carlo/com/raze/razeblock/libcryptopp.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/carlo/com/raze/razeblock"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/include/x86_64-linux-gnu/qt5"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/qt5/QtCore"/>
+					<Add directory="/usr/lib/x86_64-linux-gnu/qt5/mkspecs/linux-g++-64"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/qt5/QtGui"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/qt5/QtWidgets"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/qt5/QtTest"/>
+					<Add directory="/home/carlo/com/raze/razeblock"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/home/carlo/com/raze/razeblock/phc-winner-argon2/include"/>
+					<Add directory="/home/carlo/com/raze/razeblock/phc-winner-argon2/src"/>
+					<Add directory="/home/carlo/com/raze/razeblock/blake2"/>
+					<Add directory="/home/carlo/com/raze/razeblock/gtest/include"/>
+					<Add directory="/home/carlo/com/raze/razeblock/beast/include"/>
+					<Add directory="/home/carlo/com/raze/razeblock/miniupnp/miniupnpc"/>
+					<Add directory="/usr/include/c++/5"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/5"/>
+					<Add directory="/usr/include/c++/5/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/carlo/com/raze/razeblock/Makefile&quot;  VERBOSE=1 cryptopp/fast"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/carlo/com/raze/razeblock/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/carlo/com/raze/razeblock/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/carlo/com/raze/razeblock/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="secure">
+				<Option output="/home/carlo/com/raze/razeblock/libsecure.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/carlo/com/raze/razeblock"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/include/x86_64-linux-gnu/qt5"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/qt5/QtCore"/>
+					<Add directory="/usr/lib/x86_64-linux-gnu/qt5/mkspecs/linux-g++-64"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/qt5/QtGui"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/qt5/QtWidgets"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/qt5/QtTest"/>
+					<Add directory="/home/carlo/com/raze/razeblock"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/home/carlo/com/raze/razeblock/phc-winner-argon2/include"/>
+					<Add directory="/home/carlo/com/raze/razeblock/phc-winner-argon2/src"/>
+					<Add directory="/home/carlo/com/raze/razeblock/blake2"/>
+					<Add directory="/home/carlo/com/raze/razeblock/gtest/include"/>
+					<Add directory="/home/carlo/com/raze/razeblock/beast/include"/>
+					<Add directory="/home/carlo/com/raze/razeblock/miniupnp/miniupnpc"/>
+					<Add directory="/usr/include/c++/5"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/5"/>
+					<Add directory="/usr/include/c++/5/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/carlo/com/raze/razeblock/Makefile&quot;  VERBOSE=1 secure"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/carlo/com/raze/razeblock/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/carlo/com/raze/razeblock/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/carlo/com/raze/razeblock/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="secure/fast">
+				<Option output="/home/carlo/com/raze/razeblock/libsecure.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/carlo/com/raze/razeblock"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/include/x86_64-linux-gnu/qt5"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/qt5/QtCore"/>
+					<Add directory="/usr/lib/x86_64-linux-gnu/qt5/mkspecs/linux-g++-64"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/qt5/QtGui"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/qt5/QtWidgets"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/qt5/QtTest"/>
+					<Add directory="/home/carlo/com/raze/razeblock"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/home/carlo/com/raze/razeblock/phc-winner-argon2/include"/>
+					<Add directory="/home/carlo/com/raze/razeblock/phc-winner-argon2/src"/>
+					<Add directory="/home/carlo/com/raze/razeblock/blake2"/>
+					<Add directory="/home/carlo/com/raze/razeblock/gtest/include"/>
+					<Add directory="/home/carlo/com/raze/razeblock/beast/include"/>
+					<Add directory="/home/carlo/com/raze/razeblock/miniupnp/miniupnpc"/>
+					<Add directory="/usr/include/c++/5"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/5"/>
+					<Add directory="/usr/include/c++/5/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/carlo/com/raze/razeblock/Makefile&quot;  VERBOSE=1 secure/fast"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/carlo/com/raze/razeblock/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/carlo/com/raze/razeblock/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/carlo/com/raze/razeblock/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="xxhash">
+				<Option output="/home/carlo/com/raze/razeblock/libxxhash.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/carlo/com/raze/razeblock"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/include/x86_64-linux-gnu/qt5"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/qt5/QtCore"/>
+					<Add directory="/usr/lib/x86_64-linux-gnu/qt5/mkspecs/linux-g++-64"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/qt5/QtGui"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/qt5/QtWidgets"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/qt5/QtTest"/>
+					<Add directory="/home/carlo/com/raze/razeblock"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/home/carlo/com/raze/razeblock/phc-winner-argon2/include"/>
+					<Add directory="/home/carlo/com/raze/razeblock/phc-winner-argon2/src"/>
+					<Add directory="/home/carlo/com/raze/razeblock/blake2"/>
+					<Add directory="/home/carlo/com/raze/razeblock/gtest/include"/>
+					<Add directory="/home/carlo/com/raze/razeblock/beast/include"/>
+					<Add directory="/home/carlo/com/raze/razeblock/miniupnp/miniupnpc"/>
+					<Add directory="/usr/include/c++/5"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/5"/>
+					<Add directory="/usr/include/c++/5/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/carlo/com/raze/razeblock/Makefile&quot;  VERBOSE=1 xxhash"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/carlo/com/raze/razeblock/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/carlo/com/raze/razeblock/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/carlo/com/raze/razeblock/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="xxhash/fast">
+				<Option output="/home/carlo/com/raze/razeblock/libxxhash.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/carlo/com/raze/razeblock"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/include/x86_64-linux-gnu/qt5"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/qt5/QtCore"/>
+					<Add directory="/usr/lib/x86_64-linux-gnu/qt5/mkspecs/linux-g++-64"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/qt5/QtGui"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/qt5/QtWidgets"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/qt5/QtTest"/>
+					<Add directory="/home/carlo/com/raze/razeblock"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/home/carlo/com/raze/razeblock/phc-winner-argon2/include"/>
+					<Add directory="/home/carlo/com/raze/razeblock/phc-winner-argon2/src"/>
+					<Add directory="/home/carlo/com/raze/razeblock/blake2"/>
+					<Add directory="/home/carlo/com/raze/razeblock/gtest/include"/>
+					<Add directory="/home/carlo/com/raze/razeblock/beast/include"/>
+					<Add directory="/home/carlo/com/raze/razeblock/miniupnp/miniupnpc"/>
+					<Add directory="/usr/include/c++/5"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/5"/>
+					<Add directory="/usr/include/c++/5/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/carlo/com/raze/razeblock/Makefile&quot;  VERBOSE=1 xxhash/fast"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/carlo/com/raze/razeblock/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/carlo/com/raze/razeblock/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/carlo/com/raze/razeblock/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="install/local">
+				<Option working_dir="/home/carlo/com/raze/razeblock"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/carlo/com/raze/razeblock/Makefile&quot;  VERBOSE=1 install/local"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/carlo/com/raze/razeblock/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/carlo/com/raze/razeblock/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/carlo/com/raze/razeblock/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="argon2">
+				<Option output="/home/carlo/com/raze/razeblock/libargon2.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/carlo/com/raze/razeblock"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/include/x86_64-linux-gnu/qt5"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/qt5/QtCore"/>
+					<Add directory="/usr/lib/x86_64-linux-gnu/qt5/mkspecs/linux-g++-64"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/qt5/QtGui"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/qt5/QtWidgets"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/qt5/QtTest"/>
+					<Add directory="/home/carlo/com/raze/razeblock"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/home/carlo/com/raze/razeblock/phc-winner-argon2/include"/>
+					<Add directory="/home/carlo/com/raze/razeblock/phc-winner-argon2/src"/>
+					<Add directory="/home/carlo/com/raze/razeblock/blake2"/>
+					<Add directory="/home/carlo/com/raze/razeblock/gtest/include"/>
+					<Add directory="/home/carlo/com/raze/razeblock/beast/include"/>
+					<Add directory="/home/carlo/com/raze/razeblock/miniupnp/miniupnpc"/>
+					<Add directory="/usr/include/c++/5"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/5"/>
+					<Add directory="/usr/include/c++/5/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/carlo/com/raze/razeblock/Makefile&quot;  VERBOSE=1 argon2"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/carlo/com/raze/razeblock/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/carlo/com/raze/razeblock/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/carlo/com/raze/razeblock/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="argon2/fast">
+				<Option output="/home/carlo/com/raze/razeblock/libargon2.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/carlo/com/raze/razeblock"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/include/x86_64-linux-gnu/qt5"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/qt5/QtCore"/>
+					<Add directory="/usr/lib/x86_64-linux-gnu/qt5/mkspecs/linux-g++-64"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/qt5/QtGui"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/qt5/QtWidgets"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/qt5/QtTest"/>
+					<Add directory="/home/carlo/com/raze/razeblock"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/home/carlo/com/raze/razeblock/phc-winner-argon2/include"/>
+					<Add directory="/home/carlo/com/raze/razeblock/phc-winner-argon2/src"/>
+					<Add directory="/home/carlo/com/raze/razeblock/blake2"/>
+					<Add directory="/home/carlo/com/raze/razeblock/gtest/include"/>
+					<Add directory="/home/carlo/com/raze/razeblock/beast/include"/>
+					<Add directory="/home/carlo/com/raze/razeblock/miniupnp/miniupnpc"/>
+					<Add directory="/usr/include/c++/5"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/5"/>
+					<Add directory="/usr/include/c++/5/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/carlo/com/raze/razeblock/Makefile&quot;  VERBOSE=1 argon2/fast"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/carlo/com/raze/razeblock/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/carlo/com/raze/razeblock/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/carlo/com/raze/razeblock/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="qt">
+				<Option output="/home/carlo/com/raze/razeblock/libqt.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/carlo/com/raze/razeblock"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/include/x86_64-linux-gnu/qt5"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/qt5/QtCore"/>
+					<Add directory="/usr/lib/x86_64-linux-gnu/qt5/mkspecs/linux-g++-64"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/qt5/QtGui"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/qt5/QtWidgets"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/qt5/QtTest"/>
+					<Add directory="/home/carlo/com/raze/razeblock"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/home/carlo/com/raze/razeblock/phc-winner-argon2/include"/>
+					<Add directory="/home/carlo/com/raze/razeblock/phc-winner-argon2/src"/>
+					<Add directory="/home/carlo/com/raze/razeblock/blake2"/>
+					<Add directory="/home/carlo/com/raze/razeblock/gtest/include"/>
+					<Add directory="/home/carlo/com/raze/razeblock/beast/include"/>
+					<Add directory="/home/carlo/com/raze/razeblock/miniupnp/miniupnpc"/>
+					<Add directory="/usr/include/c++/5"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/5"/>
+					<Add directory="/usr/include/c++/5/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/carlo/com/raze/razeblock/Makefile&quot;  VERBOSE=1 qt"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/carlo/com/raze/razeblock/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/carlo/com/raze/razeblock/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/carlo/com/raze/razeblock/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="qt/fast">
+				<Option output="/home/carlo/com/raze/razeblock/libqt.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/carlo/com/raze/razeblock"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/include/x86_64-linux-gnu/qt5"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/qt5/QtCore"/>
+					<Add directory="/usr/lib/x86_64-linux-gnu/qt5/mkspecs/linux-g++-64"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/qt5/QtGui"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/qt5/QtWidgets"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/qt5/QtTest"/>
+					<Add directory="/home/carlo/com/raze/razeblock"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/home/carlo/com/raze/razeblock/phc-winner-argon2/include"/>
+					<Add directory="/home/carlo/com/raze/razeblock/phc-winner-argon2/src"/>
+					<Add directory="/home/carlo/com/raze/razeblock/blake2"/>
+					<Add directory="/home/carlo/com/raze/razeblock/gtest/include"/>
+					<Add directory="/home/carlo/com/raze/razeblock/beast/include"/>
+					<Add directory="/home/carlo/com/raze/razeblock/miniupnp/miniupnpc"/>
+					<Add directory="/usr/include/c++/5"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/5"/>
+					<Add directory="/usr/include/c++/5/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/carlo/com/raze/razeblock/Makefile&quot;  VERBOSE=1 qt/fast"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/carlo/com/raze/razeblock/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/carlo/com/raze/razeblock/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/carlo/com/raze/razeblock/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="qt_system">
+				<Option output="/home/carlo/com/raze/razeblock/qt_system" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/carlo/com/raze/razeblock"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DQT_CORE_LIB"/>
+					<Add option="-DQT_GUI_LIB"/>
+					<Add option="-DQT_WIDGETS_LIB"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/qt5"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/qt5/QtCore"/>
+					<Add directory="/usr/lib/x86_64-linux-gnu/qt5/mkspecs/linux-g++-64"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/qt5/QtGui"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/qt5/QtWidgets"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/qt5/QtTest"/>
+					<Add directory="/home/carlo/com/raze/razeblock"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/home/carlo/com/raze/razeblock/phc-winner-argon2/include"/>
+					<Add directory="/home/carlo/com/raze/razeblock/phc-winner-argon2/src"/>
+					<Add directory="/home/carlo/com/raze/razeblock/blake2"/>
+					<Add directory="/home/carlo/com/raze/razeblock/gtest/include"/>
+					<Add directory="/home/carlo/com/raze/razeblock/beast/include"/>
+					<Add directory="/home/carlo/com/raze/razeblock/miniupnp/miniupnpc"/>
+					<Add directory="/usr/include/c++/5"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/5"/>
+					<Add directory="/usr/include/c++/5/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/carlo/com/raze/razeblock/Makefile&quot;  VERBOSE=1 qt_system"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/carlo/com/raze/razeblock/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/carlo/com/raze/razeblock/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/carlo/com/raze/razeblock/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="qt_system/fast">
+				<Option output="/home/carlo/com/raze/razeblock/qt_system" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/carlo/com/raze/razeblock"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DQT_CORE_LIB"/>
+					<Add option="-DQT_GUI_LIB"/>
+					<Add option="-DQT_WIDGETS_LIB"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/qt5"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/qt5/QtCore"/>
+					<Add directory="/usr/lib/x86_64-linux-gnu/qt5/mkspecs/linux-g++-64"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/qt5/QtGui"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/qt5/QtWidgets"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/qt5/QtTest"/>
+					<Add directory="/home/carlo/com/raze/razeblock"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/home/carlo/com/raze/razeblock/phc-winner-argon2/include"/>
+					<Add directory="/home/carlo/com/raze/razeblock/phc-winner-argon2/src"/>
+					<Add directory="/home/carlo/com/raze/razeblock/blake2"/>
+					<Add directory="/home/carlo/com/raze/razeblock/gtest/include"/>
+					<Add directory="/home/carlo/com/raze/razeblock/beast/include"/>
+					<Add directory="/home/carlo/com/raze/razeblock/miniupnp/miniupnpc"/>
+					<Add directory="/usr/include/c++/5"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/5"/>
+					<Add directory="/usr/include/c++/5/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/carlo/com/raze/razeblock/Makefile&quot;  VERBOSE=1 qt_system/fast"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/carlo/com/raze/razeblock/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/carlo/com/raze/razeblock/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/carlo/com/raze/razeblock/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="raze_node">
+				<Option output="/home/carlo/com/raze/razeblock/raze_node" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/carlo/com/raze/razeblock"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/include/x86_64-linux-gnu/qt5"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/qt5/QtCore"/>
+					<Add directory="/usr/lib/x86_64-linux-gnu/qt5/mkspecs/linux-g++-64"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/qt5/QtGui"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/qt5/QtWidgets"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/qt5/QtTest"/>
+					<Add directory="/home/carlo/com/raze/razeblock"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/home/carlo/com/raze/razeblock/phc-winner-argon2/include"/>
+					<Add directory="/home/carlo/com/raze/razeblock/phc-winner-argon2/src"/>
+					<Add directory="/home/carlo/com/raze/razeblock/blake2"/>
+					<Add directory="/home/carlo/com/raze/razeblock/gtest/include"/>
+					<Add directory="/home/carlo/com/raze/razeblock/beast/include"/>
+					<Add directory="/home/carlo/com/raze/razeblock/miniupnp/miniupnpc"/>
+					<Add directory="/usr/include/c++/5"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/5"/>
+					<Add directory="/usr/include/c++/5/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/carlo/com/raze/razeblock/Makefile&quot;  VERBOSE=1 raze_node"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/carlo/com/raze/razeblock/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/carlo/com/raze/razeblock/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/carlo/com/raze/razeblock/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="raze_node/fast">
+				<Option output="/home/carlo/com/raze/razeblock/raze_node" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/carlo/com/raze/razeblock"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/include/x86_64-linux-gnu/qt5"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/qt5/QtCore"/>
+					<Add directory="/usr/lib/x86_64-linux-gnu/qt5/mkspecs/linux-g++-64"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/qt5/QtGui"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/qt5/QtWidgets"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/qt5/QtTest"/>
+					<Add directory="/home/carlo/com/raze/razeblock"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/home/carlo/com/raze/razeblock/phc-winner-argon2/include"/>
+					<Add directory="/home/carlo/com/raze/razeblock/phc-winner-argon2/src"/>
+					<Add directory="/home/carlo/com/raze/razeblock/blake2"/>
+					<Add directory="/home/carlo/com/raze/razeblock/gtest/include"/>
+					<Add directory="/home/carlo/com/raze/razeblock/beast/include"/>
+					<Add directory="/home/carlo/com/raze/razeblock/miniupnp/miniupnpc"/>
+					<Add directory="/usr/include/c++/5"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/5"/>
+					<Add directory="/usr/include/c++/5/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/carlo/com/raze/razeblock/Makefile&quot;  VERBOSE=1 raze_node/fast"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/carlo/com/raze/razeblock/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/carlo/com/raze/razeblock/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/carlo/com/raze/razeblock/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="install">
+				<Option working_dir="/home/carlo/com/raze/razeblock"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/carlo/com/raze/razeblock/Makefile&quot;  VERBOSE=1 install"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/carlo/com/raze/razeblock/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/carlo/com/raze/razeblock/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/carlo/com/raze/razeblock/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="package">
+				<Option working_dir="/home/carlo/com/raze/razeblock"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/carlo/com/raze/razeblock/Makefile&quot;  VERBOSE=1 package"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/carlo/com/raze/razeblock/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/carlo/com/raze/razeblock/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/carlo/com/raze/razeblock/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="raze_lib">
+				<Option output="/home/carlo/com/raze/razeblock/libraze_lib.so" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/carlo/com/raze/razeblock"/>
+				<Option object_output="./"/>
+				<Option type="3"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/include/x86_64-linux-gnu/qt5"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/qt5/QtCore"/>
+					<Add directory="/usr/lib/x86_64-linux-gnu/qt5/mkspecs/linux-g++-64"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/qt5/QtGui"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/qt5/QtWidgets"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/qt5/QtTest"/>
+					<Add directory="/home/carlo/com/raze/razeblock"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/home/carlo/com/raze/razeblock/phc-winner-argon2/include"/>
+					<Add directory="/home/carlo/com/raze/razeblock/phc-winner-argon2/src"/>
+					<Add directory="/home/carlo/com/raze/razeblock/blake2"/>
+					<Add directory="/home/carlo/com/raze/razeblock/gtest/include"/>
+					<Add directory="/home/carlo/com/raze/razeblock/beast/include"/>
+					<Add directory="/home/carlo/com/raze/razeblock/miniupnp/miniupnpc"/>
+					<Add directory="/usr/include/c++/5"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/5"/>
+					<Add directory="/usr/include/c++/5/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/carlo/com/raze/razeblock/Makefile&quot;  VERBOSE=1 raze_lib"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/carlo/com/raze/razeblock/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/carlo/com/raze/razeblock/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/carlo/com/raze/razeblock/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="raze_lib/fast">
+				<Option output="/home/carlo/com/raze/razeblock/libraze_lib.so" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/carlo/com/raze/razeblock"/>
+				<Option object_output="./"/>
+				<Option type="3"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/include/x86_64-linux-gnu/qt5"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/qt5/QtCore"/>
+					<Add directory="/usr/lib/x86_64-linux-gnu/qt5/mkspecs/linux-g++-64"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/qt5/QtGui"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/qt5/QtWidgets"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/qt5/QtTest"/>
+					<Add directory="/home/carlo/com/raze/razeblock"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/home/carlo/com/raze/razeblock/phc-winner-argon2/include"/>
+					<Add directory="/home/carlo/com/raze/razeblock/phc-winner-argon2/src"/>
+					<Add directory="/home/carlo/com/raze/razeblock/blake2"/>
+					<Add directory="/home/carlo/com/raze/razeblock/gtest/include"/>
+					<Add directory="/home/carlo/com/raze/razeblock/beast/include"/>
+					<Add directory="/home/carlo/com/raze/razeblock/miniupnp/miniupnpc"/>
+					<Add directory="/usr/include/c++/5"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/5"/>
+					<Add directory="/usr/include/c++/5/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/carlo/com/raze/razeblock/Makefile&quot;  VERBOSE=1 raze_lib/fast"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/carlo/com/raze/razeblock/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/carlo/com/raze/razeblock/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/carlo/com/raze/razeblock/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="package_source">
+				<Option working_dir="/home/carlo/com/raze/razeblock"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/carlo/com/raze/razeblock/Makefile&quot;  VERBOSE=1 package_source"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/carlo/com/raze/razeblock/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/carlo/com/raze/razeblock/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/carlo/com/raze/razeblock/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="ed25519">
+				<Option output="/home/carlo/com/raze/razeblock/libed25519.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/carlo/com/raze/razeblock"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/include/x86_64-linux-gnu/qt5"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/qt5/QtCore"/>
+					<Add directory="/usr/lib/x86_64-linux-gnu/qt5/mkspecs/linux-g++-64"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/qt5/QtGui"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/qt5/QtWidgets"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/qt5/QtTest"/>
+					<Add directory="/home/carlo/com/raze/razeblock"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/home/carlo/com/raze/razeblock/phc-winner-argon2/include"/>
+					<Add directory="/home/carlo/com/raze/razeblock/phc-winner-argon2/src"/>
+					<Add directory="/home/carlo/com/raze/razeblock/blake2"/>
+					<Add directory="/home/carlo/com/raze/razeblock/gtest/include"/>
+					<Add directory="/home/carlo/com/raze/razeblock/beast/include"/>
+					<Add directory="/home/carlo/com/raze/razeblock/miniupnp/miniupnpc"/>
+					<Add directory="/usr/include/c++/5"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/5"/>
+					<Add directory="/usr/include/c++/5/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/carlo/com/raze/razeblock/Makefile&quot;  VERBOSE=1 ed25519"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/carlo/com/raze/razeblock/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/carlo/com/raze/razeblock/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/carlo/com/raze/razeblock/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="ed25519/fast">
+				<Option output="/home/carlo/com/raze/razeblock/libed25519.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/carlo/com/raze/razeblock"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/include/x86_64-linux-gnu/qt5"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/qt5/QtCore"/>
+					<Add directory="/usr/lib/x86_64-linux-gnu/qt5/mkspecs/linux-g++-64"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/qt5/QtGui"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/qt5/QtWidgets"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/qt5/QtTest"/>
+					<Add directory="/home/carlo/com/raze/razeblock"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/home/carlo/com/raze/razeblock/phc-winner-argon2/include"/>
+					<Add directory="/home/carlo/com/raze/razeblock/phc-winner-argon2/src"/>
+					<Add directory="/home/carlo/com/raze/razeblock/blake2"/>
+					<Add directory="/home/carlo/com/raze/razeblock/gtest/include"/>
+					<Add directory="/home/carlo/com/raze/razeblock/beast/include"/>
+					<Add directory="/home/carlo/com/raze/razeblock/miniupnp/miniupnpc"/>
+					<Add directory="/usr/include/c++/5"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/5"/>
+					<Add directory="/usr/include/c++/5/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/carlo/com/raze/razeblock/Makefile&quot;  VERBOSE=1 ed25519/fast"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/carlo/com/raze/razeblock/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/carlo/com/raze/razeblock/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/carlo/com/raze/razeblock/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="qt_test">
+				<Option output="/home/carlo/com/raze/razeblock/qt_test" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/carlo/com/raze/razeblock"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DQT_CORE_LIB"/>
+					<Add option="-DQT_GUI_LIB"/>
+					<Add option="-DQT_WIDGETS_LIB"/>
+					<Add option="-DQT_TESTLIB_LIB"/>
+					<Add option="-DQT_TESTCASE_BUILDDIR=&quot;/home/carlo/com/raze/razeblock&quot;"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/qt5"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/qt5/QtCore"/>
+					<Add directory="/usr/lib/x86_64-linux-gnu/qt5/mkspecs/linux-g++-64"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/qt5/QtGui"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/qt5/QtWidgets"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/qt5/QtTest"/>
+					<Add directory="/home/carlo/com/raze/razeblock"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/home/carlo/com/raze/razeblock/phc-winner-argon2/include"/>
+					<Add directory="/home/carlo/com/raze/razeblock/phc-winner-argon2/src"/>
+					<Add directory="/home/carlo/com/raze/razeblock/blake2"/>
+					<Add directory="/home/carlo/com/raze/razeblock/gtest/include"/>
+					<Add directory="/home/carlo/com/raze/razeblock/beast/include"/>
+					<Add directory="/home/carlo/com/raze/razeblock/miniupnp/miniupnpc"/>
+					<Add directory="/usr/include/c++/5"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/5"/>
+					<Add directory="/usr/include/c++/5/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/carlo/com/raze/razeblock/Makefile&quot;  VERBOSE=1 qt_test"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/carlo/com/raze/razeblock/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/carlo/com/raze/razeblock/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/carlo/com/raze/razeblock/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="qt_test/fast">
+				<Option output="/home/carlo/com/raze/razeblock/qt_test" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/carlo/com/raze/razeblock"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DQT_CORE_LIB"/>
+					<Add option="-DQT_GUI_LIB"/>
+					<Add option="-DQT_WIDGETS_LIB"/>
+					<Add option="-DQT_TESTLIB_LIB"/>
+					<Add option="-DQT_TESTCASE_BUILDDIR=&quot;/home/carlo/com/raze/razeblock&quot;"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/qt5"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/qt5/QtCore"/>
+					<Add directory="/usr/lib/x86_64-linux-gnu/qt5/mkspecs/linux-g++-64"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/qt5/QtGui"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/qt5/QtWidgets"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/qt5/QtTest"/>
+					<Add directory="/home/carlo/com/raze/razeblock"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/home/carlo/com/raze/razeblock/phc-winner-argon2/include"/>
+					<Add directory="/home/carlo/com/raze/razeblock/phc-winner-argon2/src"/>
+					<Add directory="/home/carlo/com/raze/razeblock/blake2"/>
+					<Add directory="/home/carlo/com/raze/razeblock/gtest/include"/>
+					<Add directory="/home/carlo/com/raze/razeblock/beast/include"/>
+					<Add directory="/home/carlo/com/raze/razeblock/miniupnp/miniupnpc"/>
+					<Add directory="/usr/include/c++/5"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/5"/>
+					<Add directory="/usr/include/c++/5/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/carlo/com/raze/razeblock/Makefile&quot;  VERBOSE=1 qt_test/fast"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/carlo/com/raze/razeblock/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/carlo/com/raze/razeblock/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/carlo/com/raze/razeblock/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="edit_cache">
+				<Option working_dir="/home/carlo/com/raze/razeblock"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/carlo/com/raze/razeblock/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/carlo/com/raze/razeblock/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/carlo/com/raze/razeblock/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/carlo/com/raze/razeblock/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="rebuild_cache">
+				<Option working_dir="/home/carlo/com/raze/razeblock"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/carlo/com/raze/razeblock/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/carlo/com/raze/razeblock/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/carlo/com/raze/razeblock/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/carlo/com/raze/razeblock/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="list_install_components">
+				<Option working_dir="/home/carlo/com/raze/razeblock"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/carlo/com/raze/razeblock/Makefile&quot;  VERBOSE=1 list_install_components"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/carlo/com/raze/razeblock/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/carlo/com/raze/razeblock/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/carlo/com/raze/razeblock/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="gtest_main">
+				<Option output="/home/carlo/com/raze/razeblock/gtest/libgtest_main.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/carlo/com/raze/razeblock/gtest"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/include/x86_64-linux-gnu/qt5"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/qt5/QtCore"/>
+					<Add directory="/usr/lib/x86_64-linux-gnu/qt5/mkspecs/linux-g++-64"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/qt5/QtGui"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/qt5/QtWidgets"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/qt5/QtTest"/>
+					<Add directory="/home/carlo/com/raze/razeblock"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/home/carlo/com/raze/razeblock/phc-winner-argon2/include"/>
+					<Add directory="/home/carlo/com/raze/razeblock/phc-winner-argon2/src"/>
+					<Add directory="/home/carlo/com/raze/razeblock/blake2"/>
+					<Add directory="/home/carlo/com/raze/razeblock/gtest/include"/>
+					<Add directory="/home/carlo/com/raze/razeblock/gtest"/>
+					<Add directory="/usr/include/c++/5"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/5"/>
+					<Add directory="/usr/include/c++/5/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/carlo/com/raze/razeblock/gtest/Makefile&quot;  VERBOSE=1 gtest_main"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/carlo/com/raze/razeblock/gtest/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/carlo/com/raze/razeblock/gtest/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/carlo/com/raze/razeblock/gtest/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="gtest_main/fast">
+				<Option output="/home/carlo/com/raze/razeblock/gtest/libgtest_main.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/carlo/com/raze/razeblock/gtest"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/include/x86_64-linux-gnu/qt5"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/qt5/QtCore"/>
+					<Add directory="/usr/lib/x86_64-linux-gnu/qt5/mkspecs/linux-g++-64"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/qt5/QtGui"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/qt5/QtWidgets"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/qt5/QtTest"/>
+					<Add directory="/home/carlo/com/raze/razeblock"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/home/carlo/com/raze/razeblock/phc-winner-argon2/include"/>
+					<Add directory="/home/carlo/com/raze/razeblock/phc-winner-argon2/src"/>
+					<Add directory="/home/carlo/com/raze/razeblock/blake2"/>
+					<Add directory="/home/carlo/com/raze/razeblock/gtest/include"/>
+					<Add directory="/home/carlo/com/raze/razeblock/gtest"/>
+					<Add directory="/usr/include/c++/5"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/5"/>
+					<Add directory="/usr/include/c++/5/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/carlo/com/raze/razeblock/gtest/Makefile&quot;  VERBOSE=1 gtest_main/fast"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/carlo/com/raze/razeblock/gtest/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/carlo/com/raze/razeblock/gtest/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/carlo/com/raze/razeblock/gtest/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="gtest">
+				<Option output="/home/carlo/com/raze/razeblock/gtest/libgtest.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/carlo/com/raze/razeblock/gtest"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/include/x86_64-linux-gnu/qt5"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/qt5/QtCore"/>
+					<Add directory="/usr/lib/x86_64-linux-gnu/qt5/mkspecs/linux-g++-64"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/qt5/QtGui"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/qt5/QtWidgets"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/qt5/QtTest"/>
+					<Add directory="/home/carlo/com/raze/razeblock"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/home/carlo/com/raze/razeblock/phc-winner-argon2/include"/>
+					<Add directory="/home/carlo/com/raze/razeblock/phc-winner-argon2/src"/>
+					<Add directory="/home/carlo/com/raze/razeblock/blake2"/>
+					<Add directory="/home/carlo/com/raze/razeblock/gtest/include"/>
+					<Add directory="/home/carlo/com/raze/razeblock/gtest"/>
+					<Add directory="/usr/include/c++/5"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/5"/>
+					<Add directory="/usr/include/c++/5/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/carlo/com/raze/razeblock/gtest/Makefile&quot;  VERBOSE=1 gtest"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/carlo/com/raze/razeblock/gtest/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/carlo/com/raze/razeblock/gtest/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/carlo/com/raze/razeblock/gtest/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="gtest/fast">
+				<Option output="/home/carlo/com/raze/razeblock/gtest/libgtest.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/carlo/com/raze/razeblock/gtest"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/include/x86_64-linux-gnu/qt5"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/qt5/QtCore"/>
+					<Add directory="/usr/lib/x86_64-linux-gnu/qt5/mkspecs/linux-g++-64"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/qt5/QtGui"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/qt5/QtWidgets"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/qt5/QtTest"/>
+					<Add directory="/home/carlo/com/raze/razeblock"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/home/carlo/com/raze/razeblock/phc-winner-argon2/include"/>
+					<Add directory="/home/carlo/com/raze/razeblock/phc-winner-argon2/src"/>
+					<Add directory="/home/carlo/com/raze/razeblock/blake2"/>
+					<Add directory="/home/carlo/com/raze/razeblock/gtest/include"/>
+					<Add directory="/home/carlo/com/raze/razeblock/gtest"/>
+					<Add directory="/usr/include/c++/5"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/5"/>
+					<Add directory="/usr/include/c++/5/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/carlo/com/raze/razeblock/gtest/Makefile&quot;  VERBOSE=1 gtest/fast"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/carlo/com/raze/razeblock/gtest/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/carlo/com/raze/razeblock/gtest/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/carlo/com/raze/razeblock/gtest/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="libminiupnpc-static">
+				<Option output="/home/carlo/com/raze/razeblock/miniupnp/miniupnpc/libminiupnpc.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/carlo/com/raze/razeblock/miniupnp/miniupnpc"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DMINIUPNPC_SET_SOCKET_TIMEOUT"/>
+					<Add option="-D_BSD_SOURCE"/>
+					<Add option="-D_DEFAULT_SOURCE"/>
+					<Add option="-D_XOPEN_SOURCE=600"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/qt5"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/qt5/QtCore"/>
+					<Add directory="/usr/lib/x86_64-linux-gnu/qt5/mkspecs/linux-g++-64"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/qt5/QtGui"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/qt5/QtWidgets"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/qt5/QtTest"/>
+					<Add directory="/home/carlo/com/raze/razeblock"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/home/carlo/com/raze/razeblock/phc-winner-argon2/include"/>
+					<Add directory="/home/carlo/com/raze/razeblock/phc-winner-argon2/src"/>
+					<Add directory="/home/carlo/com/raze/razeblock/blake2"/>
+					<Add directory="/home/carlo/com/raze/razeblock/gtest/include"/>
+					<Add directory="/home/carlo/com/raze/razeblock/beast/include"/>
+					<Add directory="/home/carlo/com/raze/razeblock/miniupnp/miniupnpc"/>
+					<Add directory="/usr/include/c++/5"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/5"/>
+					<Add directory="/usr/include/c++/5/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/carlo/com/raze/razeblock/miniupnp/miniupnpc/Makefile&quot;  VERBOSE=1 libminiupnpc-static"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/carlo/com/raze/razeblock/miniupnp/miniupnpc/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/carlo/com/raze/razeblock/miniupnp/miniupnpc/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/carlo/com/raze/razeblock/miniupnp/miniupnpc/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="libminiupnpc-static/fast">
+				<Option output="/home/carlo/com/raze/razeblock/miniupnp/miniupnpc/libminiupnpc.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/carlo/com/raze/razeblock/miniupnp/miniupnpc"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DMINIUPNPC_SET_SOCKET_TIMEOUT"/>
+					<Add option="-D_BSD_SOURCE"/>
+					<Add option="-D_DEFAULT_SOURCE"/>
+					<Add option="-D_XOPEN_SOURCE=600"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/qt5"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/qt5/QtCore"/>
+					<Add directory="/usr/lib/x86_64-linux-gnu/qt5/mkspecs/linux-g++-64"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/qt5/QtGui"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/qt5/QtWidgets"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/qt5/QtTest"/>
+					<Add directory="/home/carlo/com/raze/razeblock"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/home/carlo/com/raze/razeblock/phc-winner-argon2/include"/>
+					<Add directory="/home/carlo/com/raze/razeblock/phc-winner-argon2/src"/>
+					<Add directory="/home/carlo/com/raze/razeblock/blake2"/>
+					<Add directory="/home/carlo/com/raze/razeblock/gtest/include"/>
+					<Add directory="/home/carlo/com/raze/razeblock/beast/include"/>
+					<Add directory="/home/carlo/com/raze/razeblock/miniupnp/miniupnpc"/>
+					<Add directory="/usr/include/c++/5"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/5"/>
+					<Add directory="/usr/include/c++/5/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/carlo/com/raze/razeblock/miniupnp/miniupnpc/Makefile&quot;  VERBOSE=1 libminiupnpc-static/fast"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/carlo/com/raze/razeblock/miniupnp/miniupnpc/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/carlo/com/raze/razeblock/miniupnp/miniupnpc/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/carlo/com/raze/razeblock/miniupnp/miniupnpc/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="testigddescparse">
+				<Option output="/home/carlo/com/raze/razeblock/miniupnp/miniupnpc/testigddescparse" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/carlo/com/raze/razeblock/miniupnp/miniupnpc"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DMINIUPNPC_SET_SOCKET_TIMEOUT"/>
+					<Add option="-D_BSD_SOURCE"/>
+					<Add option="-D_DEFAULT_SOURCE"/>
+					<Add option="-D_XOPEN_SOURCE=600"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/qt5"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/qt5/QtCore"/>
+					<Add directory="/usr/lib/x86_64-linux-gnu/qt5/mkspecs/linux-g++-64"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/qt5/QtGui"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/qt5/QtWidgets"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/qt5/QtTest"/>
+					<Add directory="/home/carlo/com/raze/razeblock"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/home/carlo/com/raze/razeblock/phc-winner-argon2/include"/>
+					<Add directory="/home/carlo/com/raze/razeblock/phc-winner-argon2/src"/>
+					<Add directory="/home/carlo/com/raze/razeblock/blake2"/>
+					<Add directory="/home/carlo/com/raze/razeblock/gtest/include"/>
+					<Add directory="/home/carlo/com/raze/razeblock/beast/include"/>
+					<Add directory="/home/carlo/com/raze/razeblock/miniupnp/miniupnpc"/>
+					<Add directory="/usr/include/c++/5"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/5"/>
+					<Add directory="/usr/include/c++/5/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/carlo/com/raze/razeblock/miniupnp/miniupnpc/Makefile&quot;  VERBOSE=1 testigddescparse"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/carlo/com/raze/razeblock/miniupnp/miniupnpc/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/carlo/com/raze/razeblock/miniupnp/miniupnpc/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/carlo/com/raze/razeblock/miniupnp/miniupnpc/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="testigddescparse/fast">
+				<Option output="/home/carlo/com/raze/razeblock/miniupnp/miniupnpc/testigddescparse" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/carlo/com/raze/razeblock/miniupnp/miniupnpc"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DMINIUPNPC_SET_SOCKET_TIMEOUT"/>
+					<Add option="-D_BSD_SOURCE"/>
+					<Add option="-D_DEFAULT_SOURCE"/>
+					<Add option="-D_XOPEN_SOURCE=600"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/qt5"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/qt5/QtCore"/>
+					<Add directory="/usr/lib/x86_64-linux-gnu/qt5/mkspecs/linux-g++-64"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/qt5/QtGui"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/qt5/QtWidgets"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/qt5/QtTest"/>
+					<Add directory="/home/carlo/com/raze/razeblock"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/home/carlo/com/raze/razeblock/phc-winner-argon2/include"/>
+					<Add directory="/home/carlo/com/raze/razeblock/phc-winner-argon2/src"/>
+					<Add directory="/home/carlo/com/raze/razeblock/blake2"/>
+					<Add directory="/home/carlo/com/raze/razeblock/gtest/include"/>
+					<Add directory="/home/carlo/com/raze/razeblock/beast/include"/>
+					<Add directory="/home/carlo/com/raze/razeblock/miniupnp/miniupnpc"/>
+					<Add directory="/usr/include/c++/5"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/5"/>
+					<Add directory="/usr/include/c++/5/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/carlo/com/raze/razeblock/miniupnp/miniupnpc/Makefile&quot;  VERBOSE=1 testigddescparse/fast"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/carlo/com/raze/razeblock/miniupnp/miniupnpc/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/carlo/com/raze/razeblock/miniupnp/miniupnpc/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/carlo/com/raze/razeblock/miniupnp/miniupnpc/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="upnpc-static">
+				<Option output="/home/carlo/com/raze/razeblock/miniupnp/miniupnpc/upnpc-static" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/carlo/com/raze/razeblock/miniupnp/miniupnpc"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DMINIUPNPC_SET_SOCKET_TIMEOUT"/>
+					<Add option="-D_BSD_SOURCE"/>
+					<Add option="-D_DEFAULT_SOURCE"/>
+					<Add option="-D_XOPEN_SOURCE=600"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/qt5"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/qt5/QtCore"/>
+					<Add directory="/usr/lib/x86_64-linux-gnu/qt5/mkspecs/linux-g++-64"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/qt5/QtGui"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/qt5/QtWidgets"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/qt5/QtTest"/>
+					<Add directory="/home/carlo/com/raze/razeblock"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/home/carlo/com/raze/razeblock/phc-winner-argon2/include"/>
+					<Add directory="/home/carlo/com/raze/razeblock/phc-winner-argon2/src"/>
+					<Add directory="/home/carlo/com/raze/razeblock/blake2"/>
+					<Add directory="/home/carlo/com/raze/razeblock/gtest/include"/>
+					<Add directory="/home/carlo/com/raze/razeblock/beast/include"/>
+					<Add directory="/home/carlo/com/raze/razeblock/miniupnp/miniupnpc"/>
+					<Add directory="/usr/include/c++/5"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/5"/>
+					<Add directory="/usr/include/c++/5/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/carlo/com/raze/razeblock/miniupnp/miniupnpc/Makefile&quot;  VERBOSE=1 upnpc-static"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/carlo/com/raze/razeblock/miniupnp/miniupnpc/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/carlo/com/raze/razeblock/miniupnp/miniupnpc/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/carlo/com/raze/razeblock/miniupnp/miniupnpc/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="upnpc-static/fast">
+				<Option output="/home/carlo/com/raze/razeblock/miniupnp/miniupnpc/upnpc-static" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/carlo/com/raze/razeblock/miniupnp/miniupnpc"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DMINIUPNPC_SET_SOCKET_TIMEOUT"/>
+					<Add option="-D_BSD_SOURCE"/>
+					<Add option="-D_DEFAULT_SOURCE"/>
+					<Add option="-D_XOPEN_SOURCE=600"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/qt5"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/qt5/QtCore"/>
+					<Add directory="/usr/lib/x86_64-linux-gnu/qt5/mkspecs/linux-g++-64"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/qt5/QtGui"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/qt5/QtWidgets"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/qt5/QtTest"/>
+					<Add directory="/home/carlo/com/raze/razeblock"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/home/carlo/com/raze/razeblock/phc-winner-argon2/include"/>
+					<Add directory="/home/carlo/com/raze/razeblock/phc-winner-argon2/src"/>
+					<Add directory="/home/carlo/com/raze/razeblock/blake2"/>
+					<Add directory="/home/carlo/com/raze/razeblock/gtest/include"/>
+					<Add directory="/home/carlo/com/raze/razeblock/beast/include"/>
+					<Add directory="/home/carlo/com/raze/razeblock/miniupnp/miniupnpc"/>
+					<Add directory="/usr/include/c++/5"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/5"/>
+					<Add directory="/usr/include/c++/5/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/carlo/com/raze/razeblock/miniupnp/miniupnpc/Makefile&quot;  VERBOSE=1 upnpc-static/fast"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/carlo/com/raze/razeblock/miniupnp/miniupnpc/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/carlo/com/raze/razeblock/miniupnp/miniupnpc/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/carlo/com/raze/razeblock/miniupnp/miniupnpc/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="testminixml">
+				<Option output="/home/carlo/com/raze/razeblock/miniupnp/miniupnpc/testminixml" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/carlo/com/raze/razeblock/miniupnp/miniupnpc"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DMINIUPNPC_SET_SOCKET_TIMEOUT"/>
+					<Add option="-D_BSD_SOURCE"/>
+					<Add option="-D_DEFAULT_SOURCE"/>
+					<Add option="-D_XOPEN_SOURCE=600"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/qt5"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/qt5/QtCore"/>
+					<Add directory="/usr/lib/x86_64-linux-gnu/qt5/mkspecs/linux-g++-64"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/qt5/QtGui"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/qt5/QtWidgets"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/qt5/QtTest"/>
+					<Add directory="/home/carlo/com/raze/razeblock"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/home/carlo/com/raze/razeblock/phc-winner-argon2/include"/>
+					<Add directory="/home/carlo/com/raze/razeblock/phc-winner-argon2/src"/>
+					<Add directory="/home/carlo/com/raze/razeblock/blake2"/>
+					<Add directory="/home/carlo/com/raze/razeblock/gtest/include"/>
+					<Add directory="/home/carlo/com/raze/razeblock/beast/include"/>
+					<Add directory="/home/carlo/com/raze/razeblock/miniupnp/miniupnpc"/>
+					<Add directory="/usr/include/c++/5"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/5"/>
+					<Add directory="/usr/include/c++/5/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/carlo/com/raze/razeblock/miniupnp/miniupnpc/Makefile&quot;  VERBOSE=1 testminixml"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/carlo/com/raze/razeblock/miniupnp/miniupnpc/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/carlo/com/raze/razeblock/miniupnp/miniupnpc/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/carlo/com/raze/razeblock/miniupnp/miniupnpc/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="testminixml/fast">
+				<Option output="/home/carlo/com/raze/razeblock/miniupnp/miniupnpc/testminixml" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/carlo/com/raze/razeblock/miniupnp/miniupnpc"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DMINIUPNPC_SET_SOCKET_TIMEOUT"/>
+					<Add option="-D_BSD_SOURCE"/>
+					<Add option="-D_DEFAULT_SOURCE"/>
+					<Add option="-D_XOPEN_SOURCE=600"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/qt5"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/qt5/QtCore"/>
+					<Add directory="/usr/lib/x86_64-linux-gnu/qt5/mkspecs/linux-g++-64"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/qt5/QtGui"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/qt5/QtWidgets"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/qt5/QtTest"/>
+					<Add directory="/home/carlo/com/raze/razeblock"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/home/carlo/com/raze/razeblock/phc-winner-argon2/include"/>
+					<Add directory="/home/carlo/com/raze/razeblock/phc-winner-argon2/src"/>
+					<Add directory="/home/carlo/com/raze/razeblock/blake2"/>
+					<Add directory="/home/carlo/com/raze/razeblock/gtest/include"/>
+					<Add directory="/home/carlo/com/raze/razeblock/beast/include"/>
+					<Add directory="/home/carlo/com/raze/razeblock/miniupnp/miniupnpc"/>
+					<Add directory="/usr/include/c++/5"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/5"/>
+					<Add directory="/usr/include/c++/5/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/carlo/com/raze/razeblock/miniupnp/miniupnpc/Makefile&quot;  VERBOSE=1 testminixml/fast"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/carlo/com/raze/razeblock/miniupnp/miniupnpc/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/carlo/com/raze/razeblock/miniupnp/miniupnpc/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/carlo/com/raze/razeblock/miniupnp/miniupnpc/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="testupnpreplyparse">
+				<Option output="/home/carlo/com/raze/razeblock/miniupnp/miniupnpc/testupnpreplyparse" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/carlo/com/raze/razeblock/miniupnp/miniupnpc"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DMINIUPNPC_SET_SOCKET_TIMEOUT"/>
+					<Add option="-D_BSD_SOURCE"/>
+					<Add option="-D_DEFAULT_SOURCE"/>
+					<Add option="-D_XOPEN_SOURCE=600"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/qt5"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/qt5/QtCore"/>
+					<Add directory="/usr/lib/x86_64-linux-gnu/qt5/mkspecs/linux-g++-64"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/qt5/QtGui"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/qt5/QtWidgets"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/qt5/QtTest"/>
+					<Add directory="/home/carlo/com/raze/razeblock"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/home/carlo/com/raze/razeblock/phc-winner-argon2/include"/>
+					<Add directory="/home/carlo/com/raze/razeblock/phc-winner-argon2/src"/>
+					<Add directory="/home/carlo/com/raze/razeblock/blake2"/>
+					<Add directory="/home/carlo/com/raze/razeblock/gtest/include"/>
+					<Add directory="/home/carlo/com/raze/razeblock/beast/include"/>
+					<Add directory="/home/carlo/com/raze/razeblock/miniupnp/miniupnpc"/>
+					<Add directory="/usr/include/c++/5"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/5"/>
+					<Add directory="/usr/include/c++/5/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/carlo/com/raze/razeblock/miniupnp/miniupnpc/Makefile&quot;  VERBOSE=1 testupnpreplyparse"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/carlo/com/raze/razeblock/miniupnp/miniupnpc/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/carlo/com/raze/razeblock/miniupnp/miniupnpc/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/carlo/com/raze/razeblock/miniupnp/miniupnpc/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="testupnpreplyparse/fast">
+				<Option output="/home/carlo/com/raze/razeblock/miniupnp/miniupnpc/testupnpreplyparse" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/carlo/com/raze/razeblock/miniupnp/miniupnpc"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DMINIUPNPC_SET_SOCKET_TIMEOUT"/>
+					<Add option="-D_BSD_SOURCE"/>
+					<Add option="-D_DEFAULT_SOURCE"/>
+					<Add option="-D_XOPEN_SOURCE=600"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/qt5"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/qt5/QtCore"/>
+					<Add directory="/usr/lib/x86_64-linux-gnu/qt5/mkspecs/linux-g++-64"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/qt5/QtGui"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/qt5/QtWidgets"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/qt5/QtTest"/>
+					<Add directory="/home/carlo/com/raze/razeblock"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/home/carlo/com/raze/razeblock/phc-winner-argon2/include"/>
+					<Add directory="/home/carlo/com/raze/razeblock/phc-winner-argon2/src"/>
+					<Add directory="/home/carlo/com/raze/razeblock/blake2"/>
+					<Add directory="/home/carlo/com/raze/razeblock/gtest/include"/>
+					<Add directory="/home/carlo/com/raze/razeblock/beast/include"/>
+					<Add directory="/home/carlo/com/raze/razeblock/miniupnp/miniupnpc"/>
+					<Add directory="/usr/include/c++/5"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/5"/>
+					<Add directory="/usr/include/c++/5/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/carlo/com/raze/razeblock/miniupnp/miniupnpc/Makefile&quot;  VERBOSE=1 testupnpreplyparse/fast"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/carlo/com/raze/razeblock/miniupnp/miniupnpc/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/carlo/com/raze/razeblock/miniupnp/miniupnpc/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/carlo/com/raze/razeblock/miniupnp/miniupnpc/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="minixmlvalid">
+				<Option output="/home/carlo/com/raze/razeblock/miniupnp/miniupnpc/minixmlvalid" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/carlo/com/raze/razeblock/miniupnp/miniupnpc"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DMINIUPNPC_SET_SOCKET_TIMEOUT"/>
+					<Add option="-D_BSD_SOURCE"/>
+					<Add option="-D_DEFAULT_SOURCE"/>
+					<Add option="-D_XOPEN_SOURCE=600"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/qt5"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/qt5/QtCore"/>
+					<Add directory="/usr/lib/x86_64-linux-gnu/qt5/mkspecs/linux-g++-64"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/qt5/QtGui"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/qt5/QtWidgets"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/qt5/QtTest"/>
+					<Add directory="/home/carlo/com/raze/razeblock"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/home/carlo/com/raze/razeblock/phc-winner-argon2/include"/>
+					<Add directory="/home/carlo/com/raze/razeblock/phc-winner-argon2/src"/>
+					<Add directory="/home/carlo/com/raze/razeblock/blake2"/>
+					<Add directory="/home/carlo/com/raze/razeblock/gtest/include"/>
+					<Add directory="/home/carlo/com/raze/razeblock/beast/include"/>
+					<Add directory="/home/carlo/com/raze/razeblock/miniupnp/miniupnpc"/>
+					<Add directory="/usr/include/c++/5"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/5"/>
+					<Add directory="/usr/include/c++/5/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/carlo/com/raze/razeblock/miniupnp/miniupnpc/Makefile&quot;  VERBOSE=1 minixmlvalid"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/carlo/com/raze/razeblock/miniupnp/miniupnpc/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/carlo/com/raze/razeblock/miniupnp/miniupnpc/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/carlo/com/raze/razeblock/miniupnp/miniupnpc/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="minixmlvalid/fast">
+				<Option output="/home/carlo/com/raze/razeblock/miniupnp/miniupnpc/minixmlvalid" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/carlo/com/raze/razeblock/miniupnp/miniupnpc"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DMINIUPNPC_SET_SOCKET_TIMEOUT"/>
+					<Add option="-D_BSD_SOURCE"/>
+					<Add option="-D_DEFAULT_SOURCE"/>
+					<Add option="-D_XOPEN_SOURCE=600"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/qt5"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/qt5/QtCore"/>
+					<Add directory="/usr/lib/x86_64-linux-gnu/qt5/mkspecs/linux-g++-64"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/qt5/QtGui"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/qt5/QtWidgets"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/qt5/QtTest"/>
+					<Add directory="/home/carlo/com/raze/razeblock"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/home/carlo/com/raze/razeblock/phc-winner-argon2/include"/>
+					<Add directory="/home/carlo/com/raze/razeblock/phc-winner-argon2/src"/>
+					<Add directory="/home/carlo/com/raze/razeblock/blake2"/>
+					<Add directory="/home/carlo/com/raze/razeblock/gtest/include"/>
+					<Add directory="/home/carlo/com/raze/razeblock/beast/include"/>
+					<Add directory="/home/carlo/com/raze/razeblock/miniupnp/miniupnpc"/>
+					<Add directory="/usr/include/c++/5"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/5"/>
+					<Add directory="/usr/include/c++/5/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/carlo/com/raze/razeblock/miniupnp/miniupnpc/Makefile&quot;  VERBOSE=1 minixmlvalid/fast"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/carlo/com/raze/razeblock/miniupnp/miniupnpc/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/carlo/com/raze/razeblock/miniupnp/miniupnpc/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/carlo/com/raze/razeblock/miniupnp/miniupnpc/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="testminiwget">
+				<Option output="/home/carlo/com/raze/razeblock/miniupnp/miniupnpc/testminiwget" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/carlo/com/raze/razeblock/miniupnp/miniupnpc"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DMINIUPNPC_SET_SOCKET_TIMEOUT"/>
+					<Add option="-D_BSD_SOURCE"/>
+					<Add option="-D_DEFAULT_SOURCE"/>
+					<Add option="-D_XOPEN_SOURCE=600"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/qt5"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/qt5/QtCore"/>
+					<Add directory="/usr/lib/x86_64-linux-gnu/qt5/mkspecs/linux-g++-64"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/qt5/QtGui"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/qt5/QtWidgets"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/qt5/QtTest"/>
+					<Add directory="/home/carlo/com/raze/razeblock"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/home/carlo/com/raze/razeblock/phc-winner-argon2/include"/>
+					<Add directory="/home/carlo/com/raze/razeblock/phc-winner-argon2/src"/>
+					<Add directory="/home/carlo/com/raze/razeblock/blake2"/>
+					<Add directory="/home/carlo/com/raze/razeblock/gtest/include"/>
+					<Add directory="/home/carlo/com/raze/razeblock/beast/include"/>
+					<Add directory="/home/carlo/com/raze/razeblock/miniupnp/miniupnpc"/>
+					<Add directory="/usr/include/c++/5"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/5"/>
+					<Add directory="/usr/include/c++/5/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/carlo/com/raze/razeblock/miniupnp/miniupnpc/Makefile&quot;  VERBOSE=1 testminiwget"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/carlo/com/raze/razeblock/miniupnp/miniupnpc/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/carlo/com/raze/razeblock/miniupnp/miniupnpc/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/carlo/com/raze/razeblock/miniupnp/miniupnpc/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="testminiwget/fast">
+				<Option output="/home/carlo/com/raze/razeblock/miniupnp/miniupnpc/testminiwget" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/carlo/com/raze/razeblock/miniupnp/miniupnpc"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DMINIUPNPC_SET_SOCKET_TIMEOUT"/>
+					<Add option="-D_BSD_SOURCE"/>
+					<Add option="-D_DEFAULT_SOURCE"/>
+					<Add option="-D_XOPEN_SOURCE=600"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/qt5"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/qt5/QtCore"/>
+					<Add directory="/usr/lib/x86_64-linux-gnu/qt5/mkspecs/linux-g++-64"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/qt5/QtGui"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/qt5/QtWidgets"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/qt5/QtTest"/>
+					<Add directory="/home/carlo/com/raze/razeblock"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/home/carlo/com/raze/razeblock/phc-winner-argon2/include"/>
+					<Add directory="/home/carlo/com/raze/razeblock/phc-winner-argon2/src"/>
+					<Add directory="/home/carlo/com/raze/razeblock/blake2"/>
+					<Add directory="/home/carlo/com/raze/razeblock/gtest/include"/>
+					<Add directory="/home/carlo/com/raze/razeblock/beast/include"/>
+					<Add directory="/home/carlo/com/raze/razeblock/miniupnp/miniupnpc"/>
+					<Add directory="/usr/include/c++/5"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/5"/>
+					<Add directory="/usr/include/c++/5/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/carlo/com/raze/razeblock/miniupnp/miniupnpc/Makefile&quot;  VERBOSE=1 testminiwget/fast"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/carlo/com/raze/razeblock/miniupnp/miniupnpc/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/carlo/com/raze/razeblock/miniupnp/miniupnpc/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/carlo/com/raze/razeblock/miniupnp/miniupnpc/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+		</Build>
+		<Unit filename="/home/carlo/com/raze/razeblock/blake2/blake2-config.h">
+			<Option target="blake2"/>
+		</Unit>
+		<Unit filename="/home/carlo/com/raze/razeblock/blake2/blake2-impl.h">
+			<Option target="blake2"/>
+		</Unit>
+		<Unit filename="/home/carlo/com/raze/razeblock/blake2/blake2.h">
+			<Option target="blake2"/>
+		</Unit>
+		<Unit filename="/home/carlo/com/raze/razeblock/blake2/blake2b.c">
+			<Option target="blake2"/>
+		</Unit>
+		<Unit filename="/home/carlo/com/raze/razeblock/bootstrap_weights.cpp">
+			<Option target="secure"/>
+		</Unit>
+		<Unit filename="/home/carlo/com/raze/razeblock/cryptopp/algparam.cpp">
+			<Option target="cryptopp"/>
+		</Unit>
+		<Unit filename="/home/carlo/com/raze/razeblock/cryptopp/algparam.h">
+			<Option target="cryptopp"/>
+		</Unit>
+		<Unit filename="/home/carlo/com/raze/razeblock/cryptopp/asn.cpp">
+			<Option target="cryptopp"/>
+		</Unit>
+		<Unit filename="/home/carlo/com/raze/razeblock/cryptopp/asn.h">
+			<Option target="cryptopp"/>
+		</Unit>
+		<Unit filename="/home/carlo/com/raze/razeblock/cryptopp/basecode.cpp">
+			<Option target="cryptopp"/>
+		</Unit>
+		<Unit filename="/home/carlo/com/raze/razeblock/cryptopp/basecode.h">
+			<Option target="cryptopp"/>
+		</Unit>
+		<Unit filename="/home/carlo/com/raze/razeblock/cryptopp/cpu.cpp">
+			<Option target="cryptopp"/>
+		</Unit>
+		<Unit filename="/home/carlo/com/raze/razeblock/cryptopp/cpu.h">
+			<Option target="cryptopp"/>
+		</Unit>
+		<Unit filename="/home/carlo/com/raze/razeblock/cryptopp/cryptlib.cpp">
+			<Option target="cryptopp"/>
+		</Unit>
+		<Unit filename="/home/carlo/com/raze/razeblock/cryptopp/cryptlib.h">
+			<Option target="cryptopp"/>
+		</Unit>
+		<Unit filename="/home/carlo/com/raze/razeblock/cryptopp/default.cpp">
+			<Option target="cryptopp"/>
+		</Unit>
+		<Unit filename="/home/carlo/com/raze/razeblock/cryptopp/default.h">
+			<Option target="cryptopp"/>
+		</Unit>
+		<Unit filename="/home/carlo/com/raze/razeblock/cryptopp/des.cpp">
+			<Option target="cryptopp"/>
+		</Unit>
+		<Unit filename="/home/carlo/com/raze/razeblock/cryptopp/des.h">
+			<Option target="cryptopp"/>
+		</Unit>
+		<Unit filename="/home/carlo/com/raze/razeblock/cryptopp/dessp.cpp">
+			<Option target="cryptopp"/>
+		</Unit>
+		<Unit filename="/home/carlo/com/raze/razeblock/cryptopp/dll.cpp">
+			<Option target="cryptopp"/>
+		</Unit>
+		<Unit filename="/home/carlo/com/raze/razeblock/cryptopp/dll.h">
+			<Option target="cryptopp"/>
+		</Unit>
+		<Unit filename="/home/carlo/com/raze/razeblock/cryptopp/ec2n.cpp">
+			<Option target="cryptopp"/>
+		</Unit>
+		<Unit filename="/home/carlo/com/raze/razeblock/cryptopp/ec2n.h">
+			<Option target="cryptopp"/>
+		</Unit>
+		<Unit filename="/home/carlo/com/raze/razeblock/cryptopp/ecp.cpp">
+			<Option target="cryptopp"/>
+		</Unit>
+		<Unit filename="/home/carlo/com/raze/razeblock/cryptopp/ecp.h">
+			<Option target="cryptopp"/>
+		</Unit>
+		<Unit filename="/home/carlo/com/raze/razeblock/cryptopp/filters.cpp">
+			<Option target="cryptopp"/>
+		</Unit>
+		<Unit filename="/home/carlo/com/raze/razeblock/cryptopp/filters.h">
+			<Option target="cryptopp"/>
+		</Unit>
+		<Unit filename="/home/carlo/com/raze/razeblock/cryptopp/fips140.cpp">
+			<Option target="cryptopp"/>
+		</Unit>
+		<Unit filename="/home/carlo/com/raze/razeblock/cryptopp/fips140.h">
+			<Option target="cryptopp"/>
+		</Unit>
+		<Unit filename="/home/carlo/com/raze/razeblock/cryptopp/gcm.cpp">
+			<Option target="cryptopp"/>
+		</Unit>
+		<Unit filename="/home/carlo/com/raze/razeblock/cryptopp/gcm.h">
+			<Option target="cryptopp"/>
+		</Unit>
+		<Unit filename="/home/carlo/com/raze/razeblock/cryptopp/gf2n.cpp">
+			<Option target="cryptopp"/>
+		</Unit>
+		<Unit filename="/home/carlo/com/raze/razeblock/cryptopp/gf2n.h">
+			<Option target="cryptopp"/>
+		</Unit>
+		<Unit filename="/home/carlo/com/raze/razeblock/cryptopp/gfpcrypt.cpp">
+			<Option target="cryptopp"/>
+		</Unit>
+		<Unit filename="/home/carlo/com/raze/razeblock/cryptopp/gfpcrypt.h">
+			<Option target="cryptopp"/>
+		</Unit>
+		<Unit filename="/home/carlo/com/raze/razeblock/cryptopp/hex.cpp">
+			<Option target="cryptopp"/>
+		</Unit>
+		<Unit filename="/home/carlo/com/raze/razeblock/cryptopp/hex.h">
+			<Option target="cryptopp"/>
+		</Unit>
+		<Unit filename="/home/carlo/com/raze/razeblock/cryptopp/hmac.cpp">
+			<Option target="cryptopp"/>
+		</Unit>
+		<Unit filename="/home/carlo/com/raze/razeblock/cryptopp/hmac.h">
+			<Option target="cryptopp"/>
+		</Unit>
+		<Unit filename="/home/carlo/com/raze/razeblock/cryptopp/hrtimer.cpp">
+			<Option target="cryptopp"/>
+		</Unit>
+		<Unit filename="/home/carlo/com/raze/razeblock/cryptopp/hrtimer.h">
+			<Option target="cryptopp"/>
+		</Unit>
+		<Unit filename="/home/carlo/com/raze/razeblock/cryptopp/integer.cpp">
+			<Option target="cryptopp"/>
+		</Unit>
+		<Unit filename="/home/carlo/com/raze/razeblock/cryptopp/integer.h">
+			<Option target="cryptopp"/>
+		</Unit>
+		<Unit filename="/home/carlo/com/raze/razeblock/cryptopp/iterhash.cpp">
+			<Option target="cryptopp"/>
+		</Unit>
+		<Unit filename="/home/carlo/com/raze/razeblock/cryptopp/iterhash.h">
+			<Option target="cryptopp"/>
+		</Unit>
+		<Unit filename="/home/carlo/com/raze/razeblock/cryptopp/misc.cpp">
+			<Option target="cryptopp"/>
+		</Unit>
+		<Unit filename="/home/carlo/com/raze/razeblock/cryptopp/misc.h">
+			<Option target="cryptopp"/>
+		</Unit>
+		<Unit filename="/home/carlo/com/raze/razeblock/cryptopp/modes.cpp">
+			<Option target="cryptopp"/>
+		</Unit>
+		<Unit filename="/home/carlo/com/raze/razeblock/cryptopp/modes.h">
+			<Option target="cryptopp"/>
+		</Unit>
+		<Unit filename="/home/carlo/com/raze/razeblock/cryptopp/mqueue.cpp">
+			<Option target="cryptopp"/>
+		</Unit>
+		<Unit filename="/home/carlo/com/raze/razeblock/cryptopp/mqueue.h">
+			<Option target="cryptopp"/>
+		</Unit>
+		<Unit filename="/home/carlo/com/raze/razeblock/cryptopp/nbtheory.cpp">
+			<Option target="cryptopp"/>
+		</Unit>
+		<Unit filename="/home/carlo/com/raze/razeblock/cryptopp/nbtheory.h">
+			<Option target="cryptopp"/>
+		</Unit>
+		<Unit filename="/home/carlo/com/raze/razeblock/cryptopp/oaep.cpp">
+			<Option target="cryptopp"/>
+		</Unit>
+		<Unit filename="/home/carlo/com/raze/razeblock/cryptopp/oaep.h">
+			<Option target="cryptopp"/>
+		</Unit>
+		<Unit filename="/home/carlo/com/raze/razeblock/cryptopp/osrng.cpp">
+			<Option target="cryptopp"/>
+		</Unit>
+		<Unit filename="/home/carlo/com/raze/razeblock/cryptopp/osrng.h">
+			<Option target="cryptopp"/>
+		</Unit>
+		<Unit filename="/home/carlo/com/raze/razeblock/cryptopp/pubkey.cpp">
+			<Option target="cryptopp"/>
+		</Unit>
+		<Unit filename="/home/carlo/com/raze/razeblock/cryptopp/pubkey.h">
+			<Option target="cryptopp"/>
+		</Unit>
+		<Unit filename="/home/carlo/com/raze/razeblock/cryptopp/queue.cpp">
+			<Option target="cryptopp"/>
+		</Unit>
+		<Unit filename="/home/carlo/com/raze/razeblock/cryptopp/queue.h">
+			<Option target="cryptopp"/>
+		</Unit>
+		<Unit filename="/home/carlo/com/raze/razeblock/cryptopp/randpool.cpp">
+			<Option target="cryptopp"/>
+		</Unit>
+		<Unit filename="/home/carlo/com/raze/razeblock/cryptopp/randpool.h">
+			<Option target="cryptopp"/>
+		</Unit>
+		<Unit filename="/home/carlo/com/raze/razeblock/cryptopp/rdtables.cpp">
+			<Option target="cryptopp"/>
+		</Unit>
+		<Unit filename="/home/carlo/com/raze/razeblock/cryptopp/rijndael.cpp">
+			<Option target="cryptopp"/>
+		</Unit>
+		<Unit filename="/home/carlo/com/raze/razeblock/cryptopp/rijndael.h">
+			<Option target="cryptopp"/>
+		</Unit>
+		<Unit filename="/home/carlo/com/raze/razeblock/cryptopp/rng.cpp">
+			<Option target="cryptopp"/>
+		</Unit>
+		<Unit filename="/home/carlo/com/raze/razeblock/cryptopp/rng.h">
+			<Option target="cryptopp"/>
+		</Unit>
+		<Unit filename="/home/carlo/com/raze/razeblock/cryptopp/sha.cpp">
+			<Option target="cryptopp"/>
+		</Unit>
+		<Unit filename="/home/carlo/com/raze/razeblock/cryptopp/sha.h">
+			<Option target="cryptopp"/>
+		</Unit>
+		<Unit filename="/home/carlo/com/raze/razeblock/cryptopp/simple.cpp">
+			<Option target="cryptopp"/>
+		</Unit>
+		<Unit filename="/home/carlo/com/raze/razeblock/cryptopp/simple.h">
+			<Option target="cryptopp"/>
+		</Unit>
+		<Unit filename="/home/carlo/com/raze/razeblock/cryptopp/winpipes.cpp">
+			<Option target="cryptopp"/>
+		</Unit>
+		<Unit filename="/home/carlo/com/raze/razeblock/cryptopp/winpipes.h">
+			<Option target="cryptopp"/>
+		</Unit>
+		<Unit filename="/home/carlo/com/raze/razeblock/ed25519-donna/ed25519-donna-portable.h">
+			<Option target="ed25519"/>
+		</Unit>
+		<Unit filename="/home/carlo/com/raze/razeblock/ed25519-donna/ed25519-hash-custom.h">
+			<Option target="ed25519"/>
+		</Unit>
+		<Unit filename="/home/carlo/com/raze/razeblock/ed25519-donna/ed25519-randombytes-custom.h">
+			<Option target="ed25519"/>
+		</Unit>
+		<Unit filename="/home/carlo/com/raze/razeblock/ed25519-donna/ed25519.c">
+			<Option target="ed25519"/>
+		</Unit>
+		<Unit filename="/home/carlo/com/raze/razeblock/ed25519-donna/ed25519.h">
+			<Option target="ed25519"/>
+		</Unit>
+		<Unit filename="/home/carlo/com/raze/razeblock/gtest/src/gtest-all.cc">
+			<Option target="gtest"/>
+		</Unit>
+		<Unit filename="/home/carlo/com/raze/razeblock/gtest/src/gtest_main.cc">
+			<Option target="gtest_main"/>
+		</Unit>
+		<Unit filename="/home/carlo/com/raze/razeblock/lmdb/libraries/liblmdb/lmdb.h">
+			<Option target="lmdb"/>
+		</Unit>
+		<Unit filename="/home/carlo/com/raze/razeblock/lmdb/libraries/liblmdb/mdb.c">
+			<Option target="lmdb"/>
+		</Unit>
+		<Unit filename="/home/carlo/com/raze/razeblock/lmdb/libraries/liblmdb/midl.c">
+			<Option target="lmdb"/>
+		</Unit>
+		<Unit filename="/home/carlo/com/raze/razeblock/lmdb/libraries/liblmdb/midl.h">
+			<Option target="lmdb"/>
+		</Unit>
+		<Unit filename="/home/carlo/com/raze/razeblock/miniupnp/miniupnpc/connecthostport.c">
+			<Option target="libminiupnpc-static"/>
+			<Option target="testigddescparse"/>
+			<Option target="testminiwget"/>
+		</Unit>
+		<Unit filename="/home/carlo/com/raze/razeblock/miniupnp/miniupnpc/connecthostport.h">
+			<Option target="libminiupnpc-static"/>
+			<Option target="testigddescparse"/>
+			<Option target="testminiwget"/>
+		</Unit>
+		<Unit filename="/home/carlo/com/raze/razeblock/miniupnp/miniupnpc/igd_desc_parse.c">
+			<Option target="libminiupnpc-static"/>
+			<Option target="testigddescparse"/>
+			<Option target="testminixml"/>
+			<Option target="testminiwget"/>
+		</Unit>
+		<Unit filename="/home/carlo/com/raze/razeblock/miniupnp/miniupnpc/igd_desc_parse.h">
+			<Option target="libminiupnpc-static"/>
+			<Option target="testigddescparse"/>
+			<Option target="testminixml"/>
+			<Option target="testminiwget"/>
+		</Unit>
+		<Unit filename="/home/carlo/com/raze/razeblock/miniupnp/miniupnpc/minisoap.c">
+			<Option target="libminiupnpc-static"/>
+			<Option target="testigddescparse"/>
+			<Option target="testminiwget"/>
+		</Unit>
+		<Unit filename="/home/carlo/com/raze/razeblock/miniupnp/miniupnpc/minisoap.h">
+			<Option target="libminiupnpc-static"/>
+			<Option target="testigddescparse"/>
+			<Option target="testminiwget"/>
+		</Unit>
+		<Unit filename="/home/carlo/com/raze/razeblock/miniupnp/miniupnpc/minissdpc.c">
+			<Option target="libminiupnpc-static"/>
+			<Option target="testigddescparse"/>
+			<Option target="testminiwget"/>
+		</Unit>
+		<Unit filename="/home/carlo/com/raze/razeblock/miniupnp/miniupnpc/minissdpc.h">
+			<Option target="libminiupnpc-static"/>
+			<Option target="testigddescparse"/>
+			<Option target="testminiwget"/>
+		</Unit>
+		<Unit filename="/home/carlo/com/raze/razeblock/miniupnp/miniupnpc/miniupnpc.c">
+			<Option target="libminiupnpc-static"/>
+			<Option target="testigddescparse"/>
+			<Option target="testminiwget"/>
+		</Unit>
+		<Unit filename="/home/carlo/com/raze/razeblock/miniupnp/miniupnpc/miniupnpc.h">
+			<Option target="libminiupnpc-static"/>
+			<Option target="testigddescparse"/>
+			<Option target="testminiwget"/>
+		</Unit>
+		<Unit filename="/home/carlo/com/raze/razeblock/miniupnp/miniupnpc/miniwget.c">
+			<Option target="libminiupnpc-static"/>
+			<Option target="testigddescparse"/>
+			<Option target="testminiwget"/>
+		</Unit>
+		<Unit filename="/home/carlo/com/raze/razeblock/miniupnp/miniupnpc/miniwget.h">
+			<Option target="libminiupnpc-static"/>
+			<Option target="testigddescparse"/>
+			<Option target="testminiwget"/>
+		</Unit>
+		<Unit filename="/home/carlo/com/raze/razeblock/miniupnp/miniupnpc/minixml.c">
+			<Option target="libminiupnpc-static"/>
+			<Option target="testigddescparse"/>
+			<Option target="testminixml"/>
+			<Option target="testupnpreplyparse"/>
+			<Option target="minixmlvalid"/>
+			<Option target="testminiwget"/>
+		</Unit>
+		<Unit filename="/home/carlo/com/raze/razeblock/miniupnp/miniupnpc/minixml.h">
+			<Option target="libminiupnpc-static"/>
+			<Option target="testigddescparse"/>
+			<Option target="testminixml"/>
+			<Option target="testupnpreplyparse"/>
+			<Option target="minixmlvalid"/>
+			<Option target="testminiwget"/>
+		</Unit>
+		<Unit filename="/home/carlo/com/raze/razeblock/miniupnp/miniupnpc/minixmlvalid.c">
+			<Option target="minixmlvalid"/>
+		</Unit>
+		<Unit filename="/home/carlo/com/raze/razeblock/miniupnp/miniupnpc/portlistingparse.c">
+			<Option target="libminiupnpc-static"/>
+			<Option target="testigddescparse"/>
+			<Option target="testminiwget"/>
+		</Unit>
+		<Unit filename="/home/carlo/com/raze/razeblock/miniupnp/miniupnpc/portlistingparse.h">
+			<Option target="libminiupnpc-static"/>
+			<Option target="testigddescparse"/>
+			<Option target="testminiwget"/>
+		</Unit>
+		<Unit filename="/home/carlo/com/raze/razeblock/miniupnp/miniupnpc/receivedata.c">
+			<Option target="libminiupnpc-static"/>
+			<Option target="testigddescparse"/>
+			<Option target="testminiwget"/>
+		</Unit>
+		<Unit filename="/home/carlo/com/raze/razeblock/miniupnp/miniupnpc/receivedata.h">
+			<Option target="libminiupnpc-static"/>
+			<Option target="testigddescparse"/>
+			<Option target="testminiwget"/>
+		</Unit>
+		<Unit filename="/home/carlo/com/raze/razeblock/miniupnp/miniupnpc/testigddescparse.c">
+			<Option target="testigddescparse"/>
+		</Unit>
+		<Unit filename="/home/carlo/com/raze/razeblock/miniupnp/miniupnpc/testminiwget.c">
+			<Option target="testminiwget"/>
+		</Unit>
+		<Unit filename="/home/carlo/com/raze/razeblock/miniupnp/miniupnpc/testminixml.c">
+			<Option target="testminixml"/>
+		</Unit>
+		<Unit filename="/home/carlo/com/raze/razeblock/miniupnp/miniupnpc/testupnpreplyparse.c">
+			<Option target="testupnpreplyparse"/>
+		</Unit>
+		<Unit filename="/home/carlo/com/raze/razeblock/miniupnp/miniupnpc/upnpc.c">
+			<Option target="upnpc-static"/>
+		</Unit>
+		<Unit filename="/home/carlo/com/raze/razeblock/miniupnp/miniupnpc/upnpcommands.c">
+			<Option target="libminiupnpc-static"/>
+			<Option target="testigddescparse"/>
+			<Option target="testminiwget"/>
+		</Unit>
+		<Unit filename="/home/carlo/com/raze/razeblock/miniupnp/miniupnpc/upnpcommands.h">
+			<Option target="libminiupnpc-static"/>
+			<Option target="testigddescparse"/>
+			<Option target="testminiwget"/>
+		</Unit>
+		<Unit filename="/home/carlo/com/raze/razeblock/miniupnp/miniupnpc/upnpdev.c">
+			<Option target="libminiupnpc-static"/>
+		</Unit>
+		<Unit filename="/home/carlo/com/raze/razeblock/miniupnp/miniupnpc/upnpdev.h">
+			<Option target="libminiupnpc-static"/>
+		</Unit>
+		<Unit filename="/home/carlo/com/raze/razeblock/miniupnp/miniupnpc/upnperrors.c">
+			<Option target="libminiupnpc-static"/>
+		</Unit>
+		<Unit filename="/home/carlo/com/raze/razeblock/miniupnp/miniupnpc/upnperrors.h">
+			<Option target="libminiupnpc-static"/>
+		</Unit>
+		<Unit filename="/home/carlo/com/raze/razeblock/miniupnp/miniupnpc/upnpreplyparse.c">
+			<Option target="libminiupnpc-static"/>
+			<Option target="testigddescparse"/>
+			<Option target="testupnpreplyparse"/>
+			<Option target="testminiwget"/>
+		</Unit>
+		<Unit filename="/home/carlo/com/raze/razeblock/miniupnp/miniupnpc/upnpreplyparse.h">
+			<Option target="libminiupnpc-static"/>
+			<Option target="testigddescparse"/>
+			<Option target="testupnpreplyparse"/>
+			<Option target="testminiwget"/>
+		</Unit>
+		<Unit filename="/home/carlo/com/raze/razeblock/phc-winner-argon2/include/argon2.h">
+			<Option target="argon2"/>
+		</Unit>
+		<Unit filename="/home/carlo/com/raze/razeblock/phc-winner-argon2/src/argon2.c">
+			<Option target="argon2"/>
+		</Unit>
+		<Unit filename="/home/carlo/com/raze/razeblock/phc-winner-argon2/src/core.c">
+			<Option target="argon2"/>
+		</Unit>
+		<Unit filename="/home/carlo/com/raze/razeblock/phc-winner-argon2/src/core.h">
+			<Option target="argon2"/>
+		</Unit>
+		<Unit filename="/home/carlo/com/raze/razeblock/phc-winner-argon2/src/encoding.c">
+			<Option target="argon2"/>
+		</Unit>
+		<Unit filename="/home/carlo/com/raze/razeblock/phc-winner-argon2/src/encoding.h">
+			<Option target="argon2"/>
+		</Unit>
+		<Unit filename="/home/carlo/com/raze/razeblock/phc-winner-argon2/src/opt.c">
+			<Option target="argon2"/>
+		</Unit>
+		<Unit filename="/home/carlo/com/raze/razeblock/phc-winner-argon2/src/thread.c">
+			<Option target="argon2"/>
+		</Unit>
+		<Unit filename="/home/carlo/com/raze/razeblock/phc-winner-argon2/src/thread.h">
+			<Option target="argon2"/>
+		</Unit>
+		<Unit filename="/home/carlo/com/raze/razeblock/qrc_resources.cpp">
+			<Option target="raze_wallet"/>
+		</Unit>
+		<Unit filename="/home/carlo/com/raze/razeblock/raze/config.hpp">
+			<Option target="secure"/>
+		</Unit>
+		<Unit filename="/home/carlo/com/raze/razeblock/raze/lib/blocks.cpp">
+			<Option target="raze_lib_static"/>
+			<Option target="raze_lib"/>
+		</Unit>
+		<Unit filename="/home/carlo/com/raze/razeblock/raze/lib/blocks.hpp">
+			<Option target="raze_lib_static"/>
+			<Option target="raze_lib"/>
+		</Unit>
+		<Unit filename="/home/carlo/com/raze/razeblock/raze/lib/interface.cpp">
+			<Option target="raze_lib_static"/>
+			<Option target="raze_lib"/>
+		</Unit>
+		<Unit filename="/home/carlo/com/raze/razeblock/raze/lib/interface.h">
+			<Option target="raze_lib_static"/>
+			<Option target="raze_lib"/>
+		</Unit>
+		<Unit filename="/home/carlo/com/raze/razeblock/raze/lib/numbers.cpp">
+			<Option target="raze_lib_static"/>
+			<Option target="raze_lib"/>
+		</Unit>
+		<Unit filename="/home/carlo/com/raze/razeblock/raze/lib/numbers.hpp">
+			<Option target="raze_lib_static"/>
+			<Option target="raze_lib"/>
+		</Unit>
+		<Unit filename="/home/carlo/com/raze/razeblock/raze/lib/utility.cpp">
+			<Option target="raze_lib_static"/>
+			<Option target="raze_lib"/>
+		</Unit>
+		<Unit filename="/home/carlo/com/raze/razeblock/raze/lib/utility.hpp">
+			<Option target="raze_lib_static"/>
+			<Option target="raze_lib"/>
+		</Unit>
+		<Unit filename="/home/carlo/com/raze/razeblock/raze/lib/work.cpp">
+			<Option target="raze_lib_static"/>
+			<Option target="raze_lib"/>
+		</Unit>
+		<Unit filename="/home/carlo/com/raze/razeblock/raze/lib/work.hpp">
+			<Option target="raze_lib_static"/>
+			<Option target="raze_lib"/>
+		</Unit>
+		<Unit filename="/home/carlo/com/raze/razeblock/raze/node/bootstrap.cpp">
+			<Option target="node"/>
+		</Unit>
+		<Unit filename="/home/carlo/com/raze/razeblock/raze/node/bootstrap.hpp">
+			<Option target="node"/>
+		</Unit>
+		<Unit filename="/home/carlo/com/raze/razeblock/raze/node/common.cpp">
+			<Option target="node"/>
+		</Unit>
+		<Unit filename="/home/carlo/com/raze/razeblock/raze/node/common.hpp">
+			<Option target="node"/>
+		</Unit>
+		<Unit filename="/home/carlo/com/raze/razeblock/raze/node/node.cpp">
+			<Option target="node"/>
+		</Unit>
+		<Unit filename="/home/carlo/com/raze/razeblock/raze/node/node.hpp">
+			<Option target="node"/>
+		</Unit>
+		<Unit filename="/home/carlo/com/raze/razeblock/raze/node/openclwork.cpp">
+			<Option target="node"/>
+		</Unit>
+		<Unit filename="/home/carlo/com/raze/razeblock/raze/node/openclwork.hpp">
+			<Option target="node"/>
+		</Unit>
+		<Unit filename="/home/carlo/com/raze/razeblock/raze/node/rpc.cpp">
+			<Option target="node"/>
+		</Unit>
+		<Unit filename="/home/carlo/com/raze/razeblock/raze/node/rpc.hpp">
+			<Option target="node"/>
+		</Unit>
+		<Unit filename="/home/carlo/com/raze/razeblock/raze/node/testing.cpp">
+			<Option target="node"/>
+		</Unit>
+		<Unit filename="/home/carlo/com/raze/razeblock/raze/node/testing.hpp">
+			<Option target="node"/>
+		</Unit>
+		<Unit filename="/home/carlo/com/raze/razeblock/raze/node/utility.cpp">
+			<Option target="secure"/>
+		</Unit>
+		<Unit filename="/home/carlo/com/raze/razeblock/raze/node/utility.hpp">
+			<Option target="secure"/>
+		</Unit>
+		<Unit filename="/home/carlo/com/raze/razeblock/raze/node/wallet.cpp">
+			<Option target="node"/>
+		</Unit>
+		<Unit filename="/home/carlo/com/raze/razeblock/raze/node/wallet.hpp">
+			<Option target="node"/>
+		</Unit>
+		<Unit filename="/home/carlo/com/raze/razeblock/raze/node/working.hpp">
+			<Option target="node"/>
+		</Unit>
+		<Unit filename="/home/carlo/com/raze/razeblock/raze/node/xorshift.hpp">
+			<Option target="node"/>
+		</Unit>
+		<Unit filename="/home/carlo/com/raze/razeblock/raze/plat/default/icon.cpp">
+			<Option target="raze_wallet"/>
+		</Unit>
+		<Unit filename="/home/carlo/com/raze/razeblock/raze/plat/linux/priority.cpp">
+			<Option target="raze_lib_static"/>
+			<Option target="raze_lib"/>
+		</Unit>
+		<Unit filename="/home/carlo/com/raze/razeblock/raze/plat/posix/openclapi.cpp">
+			<Option target="node"/>
+		</Unit>
+		<Unit filename="/home/carlo/com/raze/razeblock/raze/plat/posix/working.cpp">
+			<Option target="secure"/>
+		</Unit>
+		<Unit filename="/home/carlo/com/raze/razeblock/raze/qt/qt.cpp">
+			<Option target="qt"/>
+		</Unit>
+		<Unit filename="/home/carlo/com/raze/razeblock/raze/qt/qt.hpp">
+			<Option target="qt"/>
+		</Unit>
+		<Unit filename="/home/carlo/com/raze/razeblock/raze/qt_system/entry.cpp">
+			<Option target="qt_system"/>
+		</Unit>
+		<Unit filename="/home/carlo/com/raze/razeblock/raze/qt_test/entry.cpp">
+			<Option target="qt_test"/>
+		</Unit>
+		<Unit filename="/home/carlo/com/raze/razeblock/raze/qt_test/qt.cpp">
+			<Option target="qt_test"/>
+		</Unit>
+		<Unit filename="/home/carlo/com/raze/razeblock/raze/raze_node/daemon.cpp">
+			<Option target="raze_node"/>
+		</Unit>
+		<Unit filename="/home/carlo/com/raze/razeblock/raze/raze_node/daemon.hpp">
+			<Option target="raze_node"/>
+		</Unit>
+		<Unit filename="/home/carlo/com/raze/razeblock/raze/raze_node/entry.cpp">
+			<Option target="raze_node"/>
+		</Unit>
+		<Unit filename="/home/carlo/com/raze/razeblock/raze/raze_wallet/entry.cpp">
+			<Option target="raze_wallet"/>
+		</Unit>
+		<Unit filename="/home/carlo/com/raze/razeblock/raze/secure.cpp">
+			<Option target="secure"/>
+		</Unit>
+		<Unit filename="/home/carlo/com/raze/razeblock/raze/secure.hpp">
+			<Option target="secure"/>
+		</Unit>
+		<Unit filename="/home/carlo/com/raze/razeblock/raze/versioning.cpp">
+			<Option target="secure"/>
+		</Unit>
+		<Unit filename="/home/carlo/com/raze/razeblock/raze/versioning.hpp">
+			<Option target="secure"/>
+		</Unit>
+		<Unit filename="/home/carlo/com/raze/razeblock/resources.qrc">
+			<Option target="raze_wallet"/>
+		</Unit>
+		<Unit filename="/home/carlo/com/raze/razeblock/xxhash/xxhash.c">
+			<Option target="xxhash"/>
+		</Unit>
+		<Unit filename="/home/carlo/com/raze/razeblock/xxhash/xxhash.h">
+			<Option target="xxhash"/>
+		</Unit>
+		<Unit filename="/home/carlo/com/raze/razeblock/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\"/>
+		</Unit>
+		<Unit filename="/home/carlo/com/raze/razeblock/resources.qrc">
+			<Option virtualFolder="CMake Files\"/>
+		</Unit>
+		<Unit filename="/home/carlo/com/raze/razeblock/gtest/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\gtest\"/>
+		</Unit>
+		<Unit filename="/home/carlo/com/raze/razeblock/gtest/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\gtest\"/>
+		</Unit>
+		<Unit filename="/home/carlo/com/raze/razeblock/gtest/cmake/internal_utils.cmake">
+			<Option virtualFolder="CMake Files\gtest\cmake\"/>
+		</Unit>
+		<Unit filename="/home/carlo/com/raze/razeblock/gtest/cmake/internal_utils.cmake">
+			<Option virtualFolder="CMake Files\gtest\cmake\"/>
+		</Unit>
+		<Unit filename="/home/carlo/com/raze/razeblock/miniupnp/miniupnpc/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\miniupnp\miniupnpc\"/>
+		</Unit>
+		<Unit filename="/home/carlo/com/raze/razeblock/miniupnp/miniupnpc/miniupnpcstrings.h.cmake">
+			<Option virtualFolder="CMake Files\miniupnp\miniupnpc\"/>
+		</Unit>
+		<Unit filename="/home/carlo/com/raze/razeblock/miniupnp/miniupnpc/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\miniupnp\miniupnpc\"/>
+		</Unit>
+		<Unit filename="/home/carlo/com/raze/razeblock/miniupnp/miniupnpc/miniupnpcstrings.h.cmake">
+			<Option virtualFolder="CMake Files\miniupnp\miniupnpc\"/>
+		</Unit>
+		<Unit filename="/home/carlo/com/raze/razeblock/../../../../../usr/lib/x86_64-linux-gnu/cmake/Qt5/Qt5ConfigVersion.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\usr\lib\x86_64-linux-gnu\cmake\Qt5\"/>
+		</Unit>
+		<Unit filename="/home/carlo/com/raze/razeblock/../../../../../usr/lib/x86_64-linux-gnu/cmake/Qt5/Qt5Config.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\usr\lib\x86_64-linux-gnu\cmake\Qt5\"/>
+		</Unit>
+		<Unit filename="/home/carlo/com/raze/razeblock/../../../../../usr/lib/x86_64-linux-gnu/cmake/Qt5Core/Qt5CoreConfigVersion.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\usr\lib\x86_64-linux-gnu\cmake\Qt5Core\"/>
+		</Unit>
+		<Unit filename="/home/carlo/com/raze/razeblock/../../../../../usr/lib/x86_64-linux-gnu/cmake/Qt5Core/Qt5CoreConfig.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\usr\lib\x86_64-linux-gnu\cmake\Qt5Core\"/>
+		</Unit>
+		<Unit filename="/home/carlo/com/raze/razeblock/../../../../../usr/lib/x86_64-linux-gnu/cmake/Qt5Core/Qt5CoreConfigExtras.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\usr\lib\x86_64-linux-gnu\cmake\Qt5Core\"/>
+		</Unit>
+		<Unit filename="/home/carlo/com/raze/razeblock/../../../../../usr/lib/x86_64-linux-gnu/cmake/Qt5Core/Qt5CoreConfigExtrasMkspecDir.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\usr\lib\x86_64-linux-gnu\cmake\Qt5Core\"/>
+		</Unit>
+		<Unit filename="/home/carlo/com/raze/razeblock/../../../../../usr/lib/x86_64-linux-gnu/cmake/Qt5Core/Qt5CoreMacros.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\usr\lib\x86_64-linux-gnu\cmake\Qt5Core\"/>
+		</Unit>
+		<Unit filename="/home/carlo/com/raze/razeblock/../../../../../usr/lib/x86_64-linux-gnu/cmake/Qt5Gui/Qt5GuiConfigVersion.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\usr\lib\x86_64-linux-gnu\cmake\Qt5Gui\"/>
+		</Unit>
+		<Unit filename="/home/carlo/com/raze/razeblock/../../../../../usr/lib/x86_64-linux-gnu/cmake/Qt5Gui/Qt5GuiConfig.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\usr\lib\x86_64-linux-gnu\cmake\Qt5Gui\"/>
+		</Unit>
+		<Unit filename="/home/carlo/com/raze/razeblock/../../../../../usr/lib/x86_64-linux-gnu/cmake/Qt5Gui/Qt5GuiConfigExtras.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\usr\lib\x86_64-linux-gnu\cmake\Qt5Gui\"/>
+		</Unit>
+		<Unit filename="/home/carlo/com/raze/razeblock/../../../../../usr/lib/x86_64-linux-gnu/cmake/Qt5Widgets/Qt5WidgetsConfigVersion.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\usr\lib\x86_64-linux-gnu\cmake\Qt5Widgets\"/>
+		</Unit>
+		<Unit filename="/home/carlo/com/raze/razeblock/../../../../../usr/lib/x86_64-linux-gnu/cmake/Qt5Widgets/Qt5WidgetsConfig.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\usr\lib\x86_64-linux-gnu\cmake\Qt5Widgets\"/>
+		</Unit>
+		<Unit filename="/home/carlo/com/raze/razeblock/../../../../../usr/lib/x86_64-linux-gnu/cmake/Qt5Widgets/Qt5WidgetsConfigExtras.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\usr\lib\x86_64-linux-gnu\cmake\Qt5Widgets\"/>
+		</Unit>
+		<Unit filename="/home/carlo/com/raze/razeblock/../../../../../usr/lib/x86_64-linux-gnu/cmake/Qt5Widgets/Qt5WidgetsMacros.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\usr\lib\x86_64-linux-gnu\cmake\Qt5Widgets\"/>
+		</Unit>
+		<Unit filename="/home/carlo/com/raze/razeblock/../../../../../usr/lib/x86_64-linux-gnu/cmake/Qt5Test/Qt5TestConfigVersion.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\usr\lib\x86_64-linux-gnu\cmake\Qt5Test\"/>
+		</Unit>
+		<Unit filename="/home/carlo/com/raze/razeblock/../../../../../usr/lib/x86_64-linux-gnu/cmake/Qt5Test/Qt5TestConfig.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\usr\lib\x86_64-linux-gnu\cmake\Qt5Test\"/>
+		</Unit>
+		<Unit filename="/home/carlo/com/raze/razeblock/../../../../../usr/lib/x86_64-linux-gnu/cmake/Qt5Test/Qt5TestConfigExtras.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\usr\lib\x86_64-linux-gnu\cmake\Qt5Test\"/>
+		</Unit>
+	</Project>
+</CodeBlocks_project_file>

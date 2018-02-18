@@ -831,7 +831,7 @@ std::string raze_qt::status::color ()
 }
 
 raze_qt::wallet::wallet (QApplication & application_a, raze_qt::eventloop_processor & processor_a, raze::node & node_a, std::shared_ptr<raze::wallet> wallet_a, raze::account & account_a) :
-rendering_ratio (raze::Mxrb_ratio),
+rendering_ratio (raze::Mraze_ratio),
 node (node_a),
 wallet_m (wallet_a),
 account (account_a),
@@ -1265,11 +1265,11 @@ std::string raze_qt::wallet::format_balance (raze::uint128_t const & balance) co
 {
 	auto balance_str = raze::amount (balance).format_balance (rendering_ratio, 2, true, std::locale (""));
 	auto unit = std::string ("RAZE");
-	if (rendering_ratio == raze::kxrb_ratio)
+	if (rendering_ratio == raze::kraze_ratio)
 	{
-		unit = std::string ("kxrb");
+		unit = std::string ("kraze");
 	}
-	else if (rendering_ratio == raze::xrb_ratio)
+	else if (rendering_ratio == raze::raze_ratio)
 	{
 		unit = std::string ("raze");
 	}
@@ -1546,8 +1546,8 @@ scale_window (new QWidget),
 scale_layout (new QHBoxLayout),
 scale_label (new QLabel ("Scale:")),
 ratio_group (new QButtonGroup),
-mraze (new QRadioButton ("Mxrb")),
-kraze (new QRadioButton ("kxrb")),
+mraze (new QRadioButton ("Mraze")),
+kraze (new QRadioButton ("kraze")),
 raze (new QRadioButton ("raze")),
 back (new QPushButton ("Back")),
 ledger_window (new QWidget),
@@ -1626,19 +1626,19 @@ wallet (wallet_a)
 	QObject::connect (mraze, &QRadioButton::toggled, [this]() {
 		if (mraze->isChecked ())
 		{
-			this->wallet.change_rendering_ratio (raze::Mxrb_ratio);
+			this->wallet.change_rendering_ratio (raze::Mraze_ratio);
 		}
 	});
 	QObject::connect (kraze, &QRadioButton::toggled, [this]() {
 		if (kraze->isChecked ())
 		{
-			this->wallet.change_rendering_ratio (raze::kxrb_ratio);
+			this->wallet.change_rendering_ratio (raze::kraze_ratio);
 		}
 	});
 	QObject::connect (raze, &QRadioButton::toggled, [this]() {
 		if (raze->isChecked ())
 		{
-			this->wallet.change_rendering_ratio (raze::xrb_ratio);
+			this->wallet.change_rendering_ratio (raze::raze_ratio);
 		}
 	});
 	mraze->click ();

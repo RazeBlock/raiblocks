@@ -13,12 +13,12 @@ using uint128_t = boost::multiprecision::uint128_t;
 using uint256_t = boost::multiprecision::uint256_t;
 using uint512_t = boost::multiprecision::uint512_t;
 // SI dividers
-raze::uint128_t const Gxrb_ratio = raze::uint128_t ("1000000000000000000000000000000000"); // 10^33
-raze::uint128_t const Mxrb_ratio = raze::uint128_t ("1000000000000000000000000000000"); // 10^30
-raze::uint128_t const kxrb_ratio = raze::uint128_t ("1000000000000000000000000000"); // 10^27
-raze::uint128_t const xrb_ratio = raze::uint128_t ("1000000000000000000000000"); // 10^24
-raze::uint128_t const mxrb_ratio = raze::uint128_t ("1000000000000000000000"); // 10^21
-raze::uint128_t const uxrb_ratio = raze::uint128_t ("1000000000000000000"); // 10^18
+raze::uint128_t const Graze_ratio = raze::uint128_t ("1000000000000000000000000000000000"); // 10^33
+raze::uint128_t const Mraze_ratio = raze::uint128_t ("1000000000000000000000000000000"); // 10^30
+raze::uint128_t const kraze_ratio = raze::uint128_t ("1000000000000000000000000000"); // 10^27
+raze::uint128_t const raze_ratio = raze::uint128_t ("1000000000000000000000000"); // 10^24
+raze::uint128_t const mraze_ratio = raze::uint128_t ("1000000000000000000000"); // 10^21
+raze::uint128_t const uraze_ratio = raze::uint128_t ("1000000000000000000"); // 10^18
 
 union uint128_union
 {
