@@ -7,14 +7,14 @@
 	<key>NSHighResolutionCapable</key>
 	<string>True</string>
 	<key>CFBundleExecutable</key>
-	<string>rai_wallet</string>
+	<string>raze_wallet</string>
 	<key>CFBundleName</key>
-	<string>RaiBlocks</string>
+	<string>Raze</string>
 	<key>CFBundleInfoDictionaryVersion</key>
 	<string>6.0</string>
 	<key>CFBundleIconFile</key>
-	<string>RaiBlocks.icns</string>
+	<string>Raze.icns</string>
 	<key>CFBundleIdentifier</key>
-	<string>net.raiblocks.rai_wallet</string>
+	<string>net.raze.raze_wallet</string>
 </dict>
 </plist>

@@ -4,11 +4,11 @@
 BUG BOUNTY REPORT INFORMATION
 ---------------------------------------------------
 
-In the interest of further improving the security of the network, we have launched the RaiBlocks Bug Bounty Program.
+In the interest of further improving the security of the network, we have launched the Raze Bug Bounty Program.
 
-WARNING! Don't disclose any information for the Raiblocks bug bounty. First, please read the article about our Bug Bounty Program.
+WARNING! Don't disclose any information for the Raze bug bounty. First, please read the article about our Bug Bounty Program.
 
-https://www.reddit.com/r/RaiBlocks/comments/7makm7/announcing_the_raiblocks_bug_bounty_program/
+https://www.reddit.com/r/Raze/comments/7makm7/announcing_the_raze_bug_bounty_program/
 
 ---------------------------------------------------
 NORMAL BUG REPORT INFORMATION
@@ -60,10 +60,10 @@ Briefly describe the problem you are having in a few paragraphs.
 
 <!--
 
-Can you please provide the RaiBlocks logs for further analysis.
+Can you please provide the Raze logs for further analysis.
 
-How to find RaiBlocks logs:
+How to find Raze logs:
     
-https://github.com/clemahieu/raiblocks/wiki/Log-files
+https://github.com/clemahieu/raze/wiki/Log-files
 
 -->
