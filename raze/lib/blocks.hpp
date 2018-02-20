@@ -59,6 +59,7 @@ public:
 	virtual void visit (raze::block_visitor &) const = 0;
 	virtual bool operator== (raze::block const &) const = 0;
 	virtual raze::block_type type () const = 0;
+	virtual raze::signature block_signature () const = 0;
 	virtual void signature_set (raze::uint512_union const &) = 0;
 	virtual ~block () = default;
 };
@@ -94,6 +95,7 @@ public:
 	bool deserialize_json (boost::property_tree::ptree const &);
 	void visit (raze::block_visitor &) const override;
 	raze::block_type type () const override;
+	raze::signature block_signature () const override;
 	void signature_set (raze::uint512_union const &) override;
 	bool operator== (raze::block const &) const override;
 	bool operator== (raze::send_block const &) const;
@@ -133,6 +135,7 @@ public:
 	bool deserialize_json (boost::property_tree::ptree const &);
 	void visit (raze::block_visitor &) const override;
 	raze::block_type type () const override;
+	raze::signature block_signature () const override;
 	void signature_set (raze::uint512_union const &) override;
 	bool operator== (raze::block const &) const override;
 	bool operator== (raze::receive_block const &) const;
@@ -174,6 +177,7 @@ public:
 	bool deserialize_json (boost::property_tree::ptree const &);
 	void visit (raze::block_visitor &) const override;
 	raze::block_type type () const override;
+	raze::signature block_signature () const override;
 	void signature_set (raze::uint512_union const &) override;
 	bool operator== (raze::block const &) const override;
 	bool operator== (raze::open_block const &) const;
@@ -213,6 +217,7 @@ public:
 	bool deserialize_json (boost::property_tree::ptree const &);
 	void visit (raze::block_visitor &) const override;
 	raze::block_type type () const override;
+	raze::signature block_signature () const override;
 	void signature_set (raze::uint512_union const &) override;
 	bool operator== (raze::block const &) const override;
 	bool operator== (raze::change_block const &) const;

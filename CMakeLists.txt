@@ -255,7 +255,7 @@ add_library (secure
 	raze/versioning.hpp
 	raze/versioning.cpp)
 
-SET (RAI_LIB_SOURCES
+SET (RAZE_LIB_SOURCES
 	${PLATFORM_LIB_SOURCE}
 	raze/lib/blocks.cpp
 	raze/lib/blocks.hpp
@@ -268,8 +268,8 @@ SET (RAI_LIB_SOURCES
 	raze/lib/work.hpp
 	raze/lib/work.cpp)
 
-add_library (raze_lib SHARED ${RAI_LIB_SOURCES})
-add_library (raze_lib_static STATIC ${RAI_LIB_SOURCES})
+add_library (raze_lib SHARED ${RAZE_LIB_SOURCES})
+add_library (raze_lib_static STATIC ${RAZE_LIB_SOURCES})
 
 add_library (node
 	${PLATFORM_NODE_SOURCE}
