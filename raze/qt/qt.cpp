@@ -58,7 +58,7 @@ window (new QWidget),
 layout (new QVBoxLayout),
 self_layout (new QHBoxLayout),
 self_window (new QWidget),
-your_account_label (new QLabel ("Your Raze account:")),
+your_account_label (new QLabel ("Your Nano account:")),
 account_window (new QWidget),
 account_layout (new QHBoxLayout),
 account_text (new QLineEdit),
@@ -375,7 +375,7 @@ wallet (wallet_a)
 					raze::transaction transaction (this->wallet.wallet_m->store.environment, nullptr, true);
 					if (this->wallet.wallet_m->store.valid_password (transaction))
 					{
-						this->wallet.wallet_m->store.seed_set (transaction, seed_l);
+						this->wallet.account = this->wallet.wallet_m->change_seed (transaction, seed_l);
 						successful = true;
 					}
 					else
@@ -390,28 +390,6 @@ wallet (wallet_a)
 								import_seed->setText ("Import seed");
 							}));
 						});
-					}
-				}
-				if (successful)
-				{
-					raze::transaction transaction (this->wallet.wallet_m->store.environment, nullptr, true);
-					this->wallet.account = this->wallet.wallet_m->deterministic_insert (transaction);
-					auto count (0);
-					for (uint32_t i (1), n (32); i < n; ++i)
-					{
-						raze::raw_key prv;
-						this->wallet.wallet_m->store.deterministic_key (prv, transaction, i);
-						raze::keypair pair (prv.data.to_string ());
-						auto latest (this->wallet.node.ledger.latest (transaction, pair.pub));
-						if (!latest.is_zero ())
-						{
-							count = i;
-							n = i + 32;
-						}
-					}
-					for (uint32_t i (0); i < count; ++i)
-					{
-						this->wallet.account = this->wallet.wallet_m->deterministic_insert (transaction);
 					}
 				}
 				if (successful)
@@ -1263,9 +1241,9 @@ void raze_qt::wallet::change_rendering_ratio (raze::uint128_t const & rendering_
 
 std::string raze_qt::wallet::format_balance (raze::uint128_t const & balance) const
 {
-	auto balance_str = raze::amount (balance).format_balance (rendering_ratio, 2, true, std::locale (""));
-	auto unit = std::string ("RAZE");
-	if (rendering_ratio == raze::kraze_ratio)
+	auto balance_str = raze::amount (balance).format_balance (rendering_ratio, 0, false);
+	auto unit = std::string ("XRB");
+	if (rendering_ratio == raze::kxrb_ratio)
 	{
 		unit = std::string ("kraze");
 	}

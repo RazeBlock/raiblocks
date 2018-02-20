@@ -12,7 +12,6 @@ constexpr double bootstrap_minimum_frontier_blocks_per_sec = 1000.0;
 constexpr unsigned bootstrap_frontier_retry_limit = 16;
 constexpr double bootstrap_minimum_termination_time_sec = 30.0;
 constexpr unsigned bootstrap_max_new_connections = 10;
-constexpr unsigned bootstrap_peer_frontier_minimum_blocks = raze::raze_network == raze::raze_networks::raze_live_network ? 339000 : 0;
 
 raze::block_synchronization::block_synchronization (boost::log::sources::logger_mt & log_a) :
 log (log_a)
@@ -430,7 +429,7 @@ void raze::frontier_req_client::received_frontier (boost::system::error_code con
 			{
 				try
 				{
-					promise.set_value (count < bootstrap_peer_frontier_minimum_blocks);
+					promise.set_value (false);
 				}
 				catch (std::future_error &)
 				{
@@ -606,7 +605,7 @@ void raze::bulk_pull_client::received_block (boost::system::error_code const & e
 	{
 		raze::bufferstream stream (connection->receive_buffer.data (), 1 + size_a);
 		std::shared_ptr<raze::block> block (raze::deserialize_block (stream));
-		if (block != nullptr)
+		if (block != nullptr && !raze::work_validate (*block))
 		{
 			auto hash (block->hash ());
 			if (connection->node->config.logging.bulk_pull_logging ())
@@ -2056,7 +2055,7 @@ void raze::bulk_push_server::received_block (boost::system::error_code const & e
 	{
 		raze::bufferstream stream (receive_buffer.data (), 1 + size_a);
 		auto block (raze::deserialize_block (stream));
-		if (block != nullptr)
+		if (block != nullptr && !raze::work_validate (*block))
 		{
 			if (!connection->node->bootstrap_initiator.in_progress ())
 			{

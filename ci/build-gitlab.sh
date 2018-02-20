@@ -23,7 +23,7 @@ else
 fi
 
 if [[ ${SIMD} -eq 1 ]]; then
-    SIMD_CFG="-DRAZE_SIMD_OPTIMIZATIONS=ON"
+    SIMD_CFG="-DRAIBLOCKS_SIMD_OPTIMIZATIONS=ON"
     CRYPTOPP_CFG=""
     echo SIMD and other optimizations enabled
     echo local CPU:

@@ -301,6 +301,11 @@ raze::account raze::send_block::representative () const
 	return 0;
 }
 
+raze::signature raze::send_block::block_signature () const
+{
+	return signature;
+}
+
 void raze::send_block::signature_set (raze::uint512_union const & signature_a)
 {
 	signature = signature_a;
@@ -551,6 +556,11 @@ raze::account raze::open_block::representative () const
 	return hashables.representative;
 }
 
+raze::signature raze::open_block::block_signature () const
+{
+	return signature;
+}
+
 void raze::open_block::signature_set (raze::uint512_union const & signature_a)
 {
 	signature = signature_a;
@@ -768,6 +778,11 @@ raze::block_hash raze::change_block::root () const
 raze::account raze::change_block::representative () const
 {
 	return hashables.representative;
+}
+
+raze::signature raze::change_block::block_signature () const
+{
+	return signature;
 }
 
 void raze::change_block::signature_set (raze::uint512_union const & signature_a)
@@ -1062,6 +1077,11 @@ raze::block_hash raze::receive_block::root () const
 raze::account raze::receive_block::representative () const
 {
 	return 0;
+}
+
+raze::signature raze::receive_block::block_signature () const
+{
+	return signature;
 }
 
 void raze::receive_block::signature_set (raze::uint512_union const & signature_a)

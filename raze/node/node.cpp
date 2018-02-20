@@ -568,7 +568,7 @@ void raze::logging::init (boost::filesystem::path const & application_path_a)
 
 void raze::logging::serialize_json (boost::property_tree::ptree & tree_a) const
 {
-	tree_a.put ("version", "2");
+	tree_a.put ("version", "3");
 	tree_a.put ("ledger", ledger_logging_value);
 	tree_a.put ("ledger_duplicate", ledger_duplicate_logging_value);
 	tree_a.put ("vote", vote_logging_value);
@@ -598,6 +598,11 @@ bool raze::logging::upgrade_json (unsigned version_a, boost::property_tree::ptre
 			tree_a.put ("version", "2");
 			result = true;
 		case 2:
+			tree_a.put ("rotation_size", "4194304");
+			tree_a.put ("flush", "true");
+			tree_a.put ("version", "3");
+			result = true;
+		case 3:
 			break;
 		default:
 			throw std::runtime_error ("Unknown logging_config version");
@@ -869,14 +874,12 @@ bool raze::node_config::upgrade_json (unsigned version, boost::property_tree::pt
 			tree_a.erase ("version");
 			tree_a.put ("version", "4");
 			result = true;
-			break;
 		case 4:
 			tree_a.erase ("receive_minimum");
 			tree_a.put ("receive_minimum", raze::raze_ratio.convert_to<std::string> ());
 			tree_a.erase ("version");
 			tree_a.put ("version", "5");
 			result = true;
-			break;
 		case 5:
 			tree_a.put ("enable_voting", enable_voting);
 			tree_a.erase ("packet_delay_microseconds");
@@ -885,7 +888,6 @@ bool raze::node_config::upgrade_json (unsigned version, boost::property_tree::pt
 			tree_a.erase ("version");
 			tree_a.put ("version", "6");
 			result = true;
-			break;
 		case 6:
 			tree_a.put ("bootstrap_connections", 16);
 			tree_a.put ("callback_address", "");
@@ -894,19 +896,16 @@ bool raze::node_config::upgrade_json (unsigned version, boost::property_tree::pt
 			tree_a.erase ("version");
 			tree_a.put ("version", "7");
 			result = true;
-			break;
 		case 7:
 			tree_a.put ("lmdb_max_dbs", "128");
 			tree_a.erase ("version");
 			tree_a.put ("version", "8");
 			result = true;
-			break;
 		case 8:
 			tree_a.put ("bootstrap_connections_max", "64");
 			tree_a.erase ("version");
 			tree_a.put ("version", "9");
 			result = true;
-			break;
 		case 9:
 			break;
 		default:
@@ -1263,7 +1262,28 @@ raze::process_return raze::block_processor::process_receive_one (MDB_txn * trans
 		}
 		case raze::process_result::old:
 		{
-			//Existing codeblock will become obesolete with universal blocks and as a result is removed
+			{
+				auto root (block_a->root ());
+				auto hash (block_a->hash ());
+				auto existing (node.store.block_get (transaction_a, hash));
+				if (existing != nullptr)
+				{
+					// Replace block with one that has higher work value
+					if (raze::work_value (root, block_a->block_work ()) > raze::work_value (root, existing->block_work ()))
+					{
+						auto account (node.ledger.account (transaction_a, hash));
+						if (!raze::validate_message (account, hash, block_a->block_signature ()))
+						{
+							node.store.block_put (transaction_a, hash, *block_a, node.store.block_successor (transaction_a, hash));
+							BOOST_LOG (node.log) << boost::str (boost::format ("Replacing block %1% with one that has higher work value") % hash.to_string ());
+						}
+					}
+				}
+				else
+				{
+					// Could have been rolled back, maybe
+				}
+			}
 			if (node.config.logging.ledger_duplicate_logging ())
 			{
 				BOOST_LOG (node.log) << boost::str (boost::format ("Old for: %1%") % block_a->hash ().to_string ());
@@ -1513,11 +1533,11 @@ block_processor_thread ([this]() { this->block_processor.process_blocks (); })
 			genesis.initialize (transaction, store);
 		}
 	}
-	if (raze::raze_network == raze::raze_networks::raze_live_network)
+	if (raze::rai_network == raze::rai_networks::rai_live_network)
 	{
-		extern const char raze_bootstrap_weights[];
-		extern const size_t raze_bootstrap_weights_size;
-		raze::bufferstream weight_stream ((const uint8_t *)raze_bootstrap_weights, raze_bootstrap_weights_size);
+		extern const char rai_bootstrap_weights[];
+		extern const size_t rai_bootstrap_weights_size;
+		raze::bufferstream weight_stream ((const uint8_t *)rai_bootstrap_weights, rai_bootstrap_weights_size);
 		raze::uint128_union block_height;
 		if (!raze::read (weight_stream, block_height))
 		{
@@ -1538,7 +1558,7 @@ block_processor_thread ([this]() { this->block_processor.process_blocks (); })
 					{
 						break;
 					}
-					BOOST_LOG (log) << "Using bootstrap rep weight: " << account.to_account () << " -> " << weight.format_balance (Mraze_ratio, 0, true) << " RAZE";
+					BOOST_LOG (log) << "Using bootstrap rep weight: " << account.to_account () << " -> " << weight.format_balance (Mxrb_ratio, 0, true) << " XRB";
 					ledger.bootstrap_weights[account] = weight.number ();
 				}
 			}
@@ -3253,7 +3273,7 @@ bool raze::handle_node_options (boost::program_options::variables_map & vm)
 						if (!key.data.decode_hex (vm["key"].as<std::string> ()))
 						{
 							raze::transaction transaction (wallet->store.environment, nullptr, true);
-							wallet->store.seed_set (transaction, key);
+							wallet->change_seed (transaction, key);
 						}
 						else
 						{

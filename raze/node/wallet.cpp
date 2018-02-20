@@ -1232,6 +1232,31 @@ void raze::wallet::init_free_accounts (MDB_txn * transaction_a)
 	}
 }
 
+raze::public_key raze::wallet::change_seed (MDB_txn * transaction_a, raze::raw_key const & prv_a)
+{
+	store.seed_set (transaction_a, prv_a);
+	auto account = deterministic_insert (transaction_a);
+	auto count (0);
+	for (uint32_t i (1), n (32); i < n; ++i)
+	{
+		raze::raw_key prv;
+		store.deterministic_key (prv, transaction_a, i);
+		raze::keypair pair (prv.data.to_string ());
+		auto latest (node.ledger.latest (transaction_a, pair.pub));
+		if (!latest.is_zero ())
+		{
+			count = i;
+			n = i + 32;
+		}
+	}
+	for (uint32_t i (0); i < count; ++i)
+	{
+		account = deterministic_insert (transaction_a);
+	}
+
+	return account;
+}
+
 void raze::wallet::work_generate (raze::account const & account_a, raze::block_hash const & root_a)
 {
 	auto begin (std::chrono::steady_clock::now ());
