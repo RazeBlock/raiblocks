@@ -1558,7 +1558,7 @@ block_processor_thread ([this]() { this->block_processor.process_blocks (); })
 					{
 						break;
 					}
-					BOOST_LOG (log) << "Using bootstrap rep weight: " << account.to_account () << " -> " << weight.format_balance (Mxrb_ratio, 0, true) << " XRB";
+					BOOST_LOG (log) << "Using bootstrap rep weight: " << account.to_account () << " -> " << weight.format_balance (Mraze_ratio, 0, true) << " XRB";
 					ledger.bootstrap_weights[account] = weight.number ();
 				}
 			}

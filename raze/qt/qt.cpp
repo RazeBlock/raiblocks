@@ -1243,7 +1243,7 @@ std::string raze_qt::wallet::format_balance (raze::uint128_t const & balance) co
 {
 	auto balance_str = raze::amount (balance).format_balance (rendering_ratio, 0, false);
 	auto unit = std::string ("XRB");
-	if (rendering_ratio == raze::kxrb_ratio)
+	if (rendering_ratio == raze::kraze_ratio)
 	{
 		unit = std::string ("kraze");
 	}
