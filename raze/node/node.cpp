@@ -1533,11 +1533,11 @@ block_processor_thread ([this]() { this->block_processor.process_blocks (); })
 			genesis.initialize (transaction, store);
 		}
 	}
-	if (raze::rai_network == raze::rai_networks::rai_live_network)
+	if (raze::raze_network == raze::raze_networks::raze_live_network)
 	{
-		extern const char rai_bootstrap_weights[];
-		extern const size_t rai_bootstrap_weights_size;
-		raze::bufferstream weight_stream ((const uint8_t *)rai_bootstrap_weights, rai_bootstrap_weights_size);
+		extern const char raze_bootstrap_weights[];
+		extern const size_t raze_bootstrap_weights_size;
+		raze::bufferstream weight_stream ((const uint8_t *)raze_bootstrap_weights, raze_bootstrap_weights_size);
 		raze::uint128_union block_height;
 		if (!raze::read (weight_stream, block_height))
 		{
