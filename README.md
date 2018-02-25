@@ -1,6 +1,6 @@
 ![Logo of RazeBlock](https://razeblock.com/img/raze.svg)
 # Raze
-[![Build Status](https://travis-ci.org/RazeBlock/razeblock.svg?branch=master)](https://travis-ci.org/RazeBlock/razeblock)
+[![Build Status](https://travis-ci.org/RazeBlock/razeblock.svg?branch=develop)](https://travis-ci.org/RazeBlock/razeblock)
 
 # What is Raze?
 Raze is designed to be a feeless, instant, high throughput cryptocurrency.
